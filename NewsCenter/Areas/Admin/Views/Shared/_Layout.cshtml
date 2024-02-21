@@ -1,0 +1,71 @@
+﻿@*Bu bir html dökümanıdır*@
+<!DOCTYPE html>
+<html>
+<head>
+    @*Bu dökümanın karakter kümesi utf8 dir yani utf8 e ait klavye karakterlerini kullanılablir kılar*@
+    <meta charset="utf-8=" />
+
+    @*Bu dökümanın farklı cihazlarda responsive ayralarını yapar(telefon tablet laptop gibi cihazlarda ekran boyutuna göre nasıl gözükeceğini ayarlar.) *@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Paneli  </title>
+
+    @*Bootstrap css kullanılabilmesi için dosyaları çağırdım. Bootstrap css kodalrını uzun uzun yazmak yerine çok kısa tasarım kodları yazmamızı sağlayan bir kütüphanedir.*@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+
+</head>
+<body>
+   @*  <header class="bg-primary fw-bold text-white">
+        <h1> Admin Paneli </h1>
+        <button type="button" class="btn btn-primary float-end">Çıkış</button>
+
+    </header> *@
+    <nav class="navbar  bg-primary">
+        <div class="container-fluid">
+            <a  class="navbar-brand text-white fw-bold">Admin Paneli</a>
+                <a type="button" href="/Home" class="btn btn-dark" >Çıkış</a>
+            
+        </div>
+    </nav>
+    <div class="row">
+
+        <div class="col-2">
+
+        <div class="bg-dark text-white" id="sidebar-wrapper">
+            <div class="container-fluid">
+                <div class="list-group list-group-flush">
+                    <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white">Anasayfa</a>
+
+                        @Html.ActionLink("Kategori", "Index", "Category", new { area = "Admin" }, new { @class = "list-group-item list-group-item-action bg-dark text-white" })
+
+
+                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white active">Haberler</a>
+                        <a href="~/Admin/Contact" class="list-group-item list-group-item-action bg-dark text-white">İletişim</a>
+                        <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white">Reklam</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="col-10 bg-light ">
+            <div class="p-3">
+
+
+                @* @ karakteri ile başlayark html içerisine c^kod yazılabilir. Burda ise bu şablonu kullanmak isteyen alt sayfalar ile bağlantı kuruldu*@
+                @RenderBody()
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

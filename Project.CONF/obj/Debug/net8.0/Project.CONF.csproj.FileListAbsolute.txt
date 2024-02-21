@@ -1,0 +1,15 @@
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\bin\Debug\net8.0\Project.CONF.deps.json
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\bin\Debug\net8.0\Project.CONF.dll
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\bin\Debug\net8.0\Project.CONF.pdb
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\bin\Debug\net8.0\Project.ENTITIES.dll
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\bin\Debug\net8.0\Project.ENTITIES.pdb
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.csproj.AssemblyReference.cache
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.AssemblyInfoInputs.cache
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.AssemblyInfo.cs
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.csproj.CoreCompileInputs.cache
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.csproj.CopyComplete
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.dll
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\refint\Project.CONF.dll
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\Project.CONF.pdb
+C:\Users\merve\Desktop\Projeler\NewsCenterApp\Project.CONF\obj\Debug\net8.0\ref\Project.CONF.dll

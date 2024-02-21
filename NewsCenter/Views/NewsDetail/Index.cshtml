@@ -1,0 +1,54 @@
+﻿@model Comment
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@* Haber başlığı, Haber resmi, Haber açıklaması  *@
+<div class="card w-50">
+    <div class="card-body">
+        <h1 class="card-title">@ViewBag.NewsDetail.Header</h1>
+        <img class="w-100" src="@ViewBag.NewsDetail.ImageURL" />
+        <p class="card-text mt-4">@ViewBag.NewsDetail.Description</p>
+    </div>
+</div>
+
+
+<div class="card w-50">
+    <div class="card-body">
+        <h3 class="card-title">Yorumunuzu Yazınız</h3>
+        <form asp-action="CreateComment" asp-controller="NewsDetail" method="post" class="p-1 w-100 m-auto">
+            <input asp-for="NewsID" hidden/>
+            <textarea asp-for=CommentText class="form-control" type="text"></textarea>
+            <button class="btn btn-primary mt-2 mb-4">Yorumunu Gönder</button>
+        </form>
+
+        <h4 class="mb-4">Yorumlar(@ViewBag.comments.Count)</h4>
+        @foreach (Comment item in ViewBag.comments)
+        {
+            //AppUserProfile yok ise
+            if (item.AppUser.Profile != null)
+            {
+                <h4>@item.AppUser.Profile.FirstName</h4>
+
+            }
+            else
+            {
+                <h4>Anonim</h4>
+            }
+
+            <p>@item.CommentText</p>
+            <span>@item.CreatedDate.ToString("dd.MM.yyyy HH:mm")</span> //tarih formaatını değiştirmek için yazıldı
+            <hr />
+        
+        }
+
+    </div>
+</div>
+
+@* <style>  
+    .card-img-top{
+        max-height: 100%;
+        width: auto; /* Resmin oranlarını korumak için */
+    }
+</style> *@

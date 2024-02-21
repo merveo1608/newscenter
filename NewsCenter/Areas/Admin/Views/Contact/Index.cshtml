@@ -1,0 +1,38 @@
+﻿@model List<Contact>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Konu</th>
+            <th scope="col">Email</th>
+            <th scope="col">Oluşturulma Tarihi</th>
+            <th scope="col">Güncellenme Tarihi</th>
+            <th scope="col">Silinme Tarihi</th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Contact item in Model)
+        {
+            <tr>
+                <th scope="row">@item.ID</th>
+                <td>@item.Subject</td>
+                <td>@item.Email  </td>
+                <td>@item.CreatedDate </td>
+                <td>@item.ModifiedDate </td>
+                <td>@item.DeletedDate</td>
+                <td>
+                    <a asp-action="DetailContact" asp-route-id="@item.ID" type="button" class="btn btn-warning">Detay</a>
+                </td>
+                <td class="center hidden-phone">  <a asp-action="DeleteContact" asp-route-id="@item.ID" class="btn btn-danger"> Sil </a>   </td>
+                <td class="center hidden-phone">  <a asp-action="DestroyContact" asp-route-id="@item.ID" class="btn btn-success"> Yok Et </a>   </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

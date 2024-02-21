@@ -1,0 +1,23 @@
+﻿@model Advert
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="UpdateAdvert" asp-controller="Advert" method="post" class="p-3 w-75 m-auto">
+
+    <div class="mb-3">
+        <img src="@Model.ImageURL" class="form-control w-25" />
+        <input hidden asp-for="ImageURL" class="form-control" />
+
+    </div>
+
+    <div class="mb-3">
+        <label>Reklam Linki</label>
+        <input asp-for="WebsiteURL" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary">Reklam Güncelle</button>
+        <a asp-action="Index" button class="btn btn-primary">Geri</a>
+    </div>
+</form>

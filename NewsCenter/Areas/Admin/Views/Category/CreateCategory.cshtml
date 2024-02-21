@@ -1,0 +1,36 @@
+﻿@model Category
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@*classlar yazıldığı elementlere görselliik katar örneğin: renk, boyut, ekranda bulunduğu pozisyon vb.*@
+<form asp-action="CreateCategory" asp-controller="Category" method="post" class="p-3 w-75 m-auto">
+    <div class="row mb-3">
+        <label class="col-2 ">Kategori İsmi</label>
+        <div class="col-10">
+            <input asp-for="CategoryName" class="form-control form-control-sm" type="text" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-2"> Sıra Numarası </label>
+        <div class="col-10">
+            <input asp-for="SortNumber" class="form-control form-control-sm" type="number" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-2 "> Açıklama </label>
+        <div class="col-10">
+            <textarea asp-for="Description" class="form-control form-control-sm"> @*burada inpute değil açıklama uzun bir şey olacağı için textarea kullandım.*@
+      </textarea>
+        </div>
+    </div>
+
+   
+
+    <button type="submit" class="btn btn-primary"> Kaydet </button>
+    <a asp-action="Index" button class="btn btn-primary">Geri</a>
+
+</form>

@@ -1,0 +1,26 @@
+﻿@model Advert
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="CreateAdvert" asp-controller="Advert" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <label>Reklam URL</label>
+        <input asp-for="WebsiteURL" class="form-control" />
+    </div>
+
+
+    <div class="mb-3">
+        <label>Resim seciniz</label>
+        <input type="file" name="formFile" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-primary">Kaydet</button>
+        <a asp-action="Index" button class="btn btn-primary">Geri</a>
+
+    </div>
+
+</form>

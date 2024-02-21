@@ -1,0 +1,61 @@
+﻿@model List<News>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="panel">
+    <header class="panel-heading">
+        <a class="btn btn-primary" asp-action="CreateNews">Yeni</a>
+    </header>
+    <div class="panel-body">
+        <div class="adv-table">
+            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+                <thead>
+                    <tr>
+                        <th>Haber ID</th>
+                        <th class="hidden-phone">Resim</th>
+                        <th>Haber Başlığı</th>
+                        @* <th class="hidden-phone">Acıklaması</th> *@
+                        <th class="hidden-phone">Durumu</th>
+                        <th class="hidden-phone">Guncelle</th>
+                        <th class="hidden-phone">Sil</th>
+                        <th class="hidden-phone">Yok et</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (News item in Model)
+                    {
+
+                        <tr class="gradeX">
+
+                            <td>@item.ID</td>
+
+                            <td class="hidden-phone">
+                                <img src="@item.ImageURL" height="100" />
+                            </td>
+
+                            <td>   @item.Header  </td>
+
+                            @* <td class="hidden-phone">@item.Description</td> *@
+
+                            <td class="hidden-phone">@item.Status</td>
+
+                            <td class="center hidden-phone"><a asp-action="UpdateNews" asp-route-id="@item.ID" type="button" class="btn btn-warning"> Güncelle </a>   </td>
+
+                            <td class="center hidden-phone">  <a asp-action="DeleteNews" asp-route-id="@item.ID" class="btn btn-danger"> Sil </a>   </td>
+
+                            <td class="center hidden-phone">  <a asp-action="DestroyNews" asp-route-id="@item.ID" class="btn btn-success"> Yok Et </a>   </td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,47 @@
+﻿@model Contact
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<form asp-action="DetailContact" asp-controller="Contact" method="post" class="p-3 w-75 m-auto">
+
+    <input type="hidden" asp-for="ID" />
+    <div class="mb-3">
+        <label>Konu</label>
+        <input asp-for="Subject" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Açıklama</label>
+        <textarea asp-for="Description" class="form-control" ></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label>Oluşturulma Tarihi</label>
+        <input asp-for="CreatedDate" class="form-control" disabled />
+    </div>
+
+    <div class="mb-3">
+        <label> Güncelleme Tarihi</label>
+        <input asp-for="ModifiedDate" class="form-control" disabled />
+    </div>
+
+    <div class="mb-3">
+        <label>Silinme Tarihi</label>
+        <input asp-for="DeletedDate" class="form-control" disabled />
+    </div>
+
+
+
+    <div class="mb-3">
+        <a asp-action="Index" button class="btn btn-primary">Geri</a>
+    </div>
+</form>
