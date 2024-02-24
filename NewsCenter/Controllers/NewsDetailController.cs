@@ -30,8 +30,8 @@ namespace NewsCenter.Controllers
             Comment cm = new Comment();
             cm.NewsID = id;
 
-            //tüm yorumlar
-            List<Comment> commentList = _commentManager.GetAll();
+            //Habere ait tüm yorumlar
+            List<Comment> commentList = _commentManager.Where(x=>x.NewsID == id).ToList() ;
             ViewBag.Comments = commentList;
             return View(cm);
         }
