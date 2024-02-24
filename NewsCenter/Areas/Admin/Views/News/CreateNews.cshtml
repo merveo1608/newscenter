@@ -9,16 +9,7 @@
 
     <div class="mb-3">
         <label>Kategori Seciniz</label>
-    
-      @*   <select id="NewsCategories" name="NewsCategories" class="form-control" multiple asp-for="News.NewsCategories"> 
-            @foreach (Category item in ViewBag.categories)
-            {
-                <option value="@item.ID" >@item.CategoryName</option>
-            }
-           
-        </select> *@
-
-        @Html.DropDownListFor(model => model.News.CategoryID, new SelectList(ViewBag.categories, "ID", "CategoryName"), "-", new { @class = "form-control", id = "selectedCourse" })
+        @Html.DropDownListFor(model => model.News.CategoryID, new SelectList(ViewBag.categories, "ID", "CategoryName"), "-", new { @class = "form-control" })
     </div>
 
     <div class="mb-3">

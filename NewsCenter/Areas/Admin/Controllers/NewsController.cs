@@ -70,6 +70,8 @@ namespace NewsCenter.Areas.Admin.Controllers
 
         public async Task<IActionResult> UpdateNews(int id)
         {
+            List<Category> categories = _categoryManager.GetAll();
+            ViewBag.categories = categories;
             return View(await _newsManager.FindAsync(id));
         }
 

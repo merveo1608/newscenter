@@ -15,13 +15,14 @@
                 <thead>
                     <tr>
                         <th>Haber ID</th>
-                        <th class="hidden-phone">Resim</th>
+                        <th >Resim</th>
+                        <th>Haber Kategorisi</th>
                         <th>Haber Başlığı</th>
-                        @* <th class="hidden-phone">Acıklaması</th> *@
-                        <th class="hidden-phone">Durumu</th>
-                        <th class="hidden-phone">Guncelle</th>
-                        <th class="hidden-phone">Sil</th>
-                        <th class="hidden-phone">Yok et</th>
+                        @* <th >Acıklaması</th> *@
+                        <th >Durumu</th>
+                        <th >Guncelle</th>
+                        <th >Sil</th>
+                        <th >Yok et</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,15 +34,16 @@
 
                             <td>@item.ID</td>
 
-                            <td class="hidden-phone">
+                            <td >
                                 <img src="@item.ImageURL" height="100" />
                             </td>
 
+                            <td>   @item.Category.CategoryName  </td>
                             <td>   @item.Header  </td>
 
-                            @* <td class="hidden-phone">@item.Description</td> *@
+                            @* <td >@item.Description</td> *@
 
-                            <td class="hidden-phone">@item.Status</td>
+                            <td >@item.Status</td>
 
                             <td class="center hidden-phone"><a asp-action="UpdateNews" asp-route-id="@item.ID" type="button" class="btn btn-warning"> Güncelle </a>   </td>
 

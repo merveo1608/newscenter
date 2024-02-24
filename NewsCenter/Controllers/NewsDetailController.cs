@@ -4,6 +4,7 @@ using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Enums;
 using Project.ENTITIES.Models;
+using System.CodeDom;
 using System.Diagnostics;
 
 namespace NewsCenter.Controllers
@@ -41,7 +42,7 @@ namespace NewsCenter.Controllers
         {
             comment.AppUserID = 1;
             await _commentManager.AddAsync(comment);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new {ID = comment.NewsID});
         }
 
     }

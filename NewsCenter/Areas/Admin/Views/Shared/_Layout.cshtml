@@ -32,20 +32,28 @@
 
         <div class="col-2">
 
+
+            @* sol menü(side bar) *@
         <div class="bg-dark text-white" id="sidebar-wrapper">
             <div class="container-fluid">
                 <div class="list-group list-group-flush">
                     <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white">Anasayfa</a>
 
-                        @Html.ActionLink("Kategori", "Index", "Category", new { area = "Admin" }, new { @class = "list-group-item list-group-item-action bg-dark text-white" })
+                    @* a elementini mvc c# kod ile alternstif olarak kullandım  *@
+                        @Html.ActionLink("Kategori", "Index", "Category"
+                            , new { area = "Admin" }, 
+                            new { @class = "list-group-item list-group-item-action bg-dark text-white" }
+                        )
 
 
-                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white active">Haberler</a>
+                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white ">Haberler</a>
                         <a href="~/Admin/Contact" class="list-group-item list-group-item-action bg-dark text-white">İletişim</a>
                         <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white">Reklam</a>
                 </div>
             </div>
         </div>
+
+
         </div>
 
 
