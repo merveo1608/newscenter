@@ -817,11 +817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterApp\\Project.ENTITIES\\Project.ENTITIES.csproj",
+      "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
       "projectName": "Project.ENTITIES",
-      "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterApp\\Project.ENTITIES\\Project.ENTITIES.csproj",
+      "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
       "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterApp\\Project.ENTITIES\\obj\\",
+      "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",

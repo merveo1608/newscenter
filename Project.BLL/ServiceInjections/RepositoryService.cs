@@ -18,7 +18,6 @@ namespace Project.BLL.ServiceInjections
 
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>)); //Burada programa demek istedigimiz şey bir scope icerisinde ilgili Scope'a gelecek parametre generic bir IRepository ise bize generic bir BaseRepository instance'i gönder diyoruz
 
-            services.AddScoped<INewsCategoryRepository, NewsCategoryRepository>();
             services.AddScoped<INewsRepository, NewsRepository>();
             services.AddScoped<IContactRepository, ContactRepository>();
             services.AddScoped<ICommentRepository, CommentRepository>();

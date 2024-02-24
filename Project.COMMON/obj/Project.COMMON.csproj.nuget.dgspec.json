@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterAPP\\Project.COMMON\\Project.COMMON.csproj": {}
+    "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {}
   },
   "projects": {
-    "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterAPP\\Project.COMMON\\Project.COMMON.csproj": {
+    "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterAPP\\Project.COMMON\\Project.COMMON.csproj",
+        "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj",
         "projectName": "Project.COMMON",
-        "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterAPP\\Project.COMMON\\Project.COMMON.csproj",
+        "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\NewsCenterApp\\Project.COMMON\\obj\\",
+        "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.COMMON\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -25,7 +25,6 @@ namespace Project.DAL.ContextClasses
             builder.ApplyConfiguration(new AppUserConfiguration());
             builder.ApplyConfiguration(new AppUserProfileConfiguration());
             builder.ApplyConfiguration(new ContactConfiguration());
-            builder.ApplyConfiguration(new NewsCategoryConfiguration());
             builder.ApplyConfiguration(new NewsConfiguration());
             builder.ApplyConfiguration(new CategoryConfiguration());
             builder.ApplyConfiguration(new AdvertConfiguration());
@@ -37,7 +36,6 @@ namespace Project.DAL.ContextClasses
         public DbSet<AppUserProfile> Profiles { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<News> News { get; set; }
-        public DbSet<NewsCategory> NewCategories { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Advert> Adverts { get; set; }

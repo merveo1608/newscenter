@@ -17,7 +17,6 @@ namespace Project.BLL.ServiceInjections
 
             services.AddScoped<INewsManager, NewsManager>();
             services.AddScoped<ICategoryManager, CategoryManager>();
-            services.AddScoped<INewsCategoryManager, NewsCategoryManager>();
             services.AddScoped<IContactManager, ContactManager>();
             services.AddScoped<ICommentManager, CommentManager>();
             services.AddScoped<IAdvertManager, AdvertManager>();

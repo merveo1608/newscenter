@@ -13,6 +13,6 @@ namespace Project.ENTITIES.Models
         public string Description { get; set; }
 
         //Relational Properties
-        public virtual ICollection<NewsCategory> NewsCategories { get; set; }
+        public virtual ICollection<News> News { get; set; }
     }
 }

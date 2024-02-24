@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace NewsCenter.Controllers
 {
-    public class NewsDetailController : BaseController
+    public class NewsDetailController : Controller
     {
         private readonly ILogger<NewsDetailController> _logger;
         private readonly INewsManager _newsManager;
