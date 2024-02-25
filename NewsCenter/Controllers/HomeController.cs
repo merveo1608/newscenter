@@ -12,9 +12,11 @@ namespace NewsCenter.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         readonly INewsManager _newsManager;
-        public HomeController(INewsManager newsManager )
+        readonly ICategoryManager _categoryManager;
+        public HomeController(INewsManager newsManager, ICategoryManager categoryManager)
         {
-            _newsManager =newsManager;
+            _newsManager = newsManager;
+            _categoryManager = categoryManager;
         }
 
         public IActionResult Index()
@@ -35,6 +37,10 @@ namespace NewsCenter.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-
+        public IActionResult GetPartialData()
+        {
+            List<Category> c = _categoryManager.GetAll();
+            return PartialView("_NavbarPartial",c);
+        }
     }
 }
