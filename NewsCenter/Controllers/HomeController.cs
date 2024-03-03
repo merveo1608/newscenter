@@ -13,16 +13,30 @@ namespace NewsCenter.Controllers
         private readonly ILogger<HomeController> _logger;
         readonly INewsManager _newsManager;
         readonly ICategoryManager _categoryManager;
-        public HomeController(INewsManager newsManager, ICategoryManager categoryManager)
+        readonly IAdvertManager _advertManager;
+        public HomeController(INewsManager newsManager, ICategoryManager categoryManager, IAdvertManager advertManager)
         {
             _newsManager = newsManager;
             _categoryManager = categoryManager;
+            _advertManager = advertManager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int categoryID)
         {
-            List<News> news = _newsManager.GetAll().Where(x => x.Status != DataStatus.Deleted).ToList();
+
+            List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted).ToList();
+
+            if(categoryID !=0)
+            {
+                news = news.Where(x => x.CategoryID == categoryID).ToList();
+            }
+
+            ViewBag.categoryID = categoryID;
+
             ViewBag.news = news;
+
+            List<Advert> adverts = _advertManager.GetAll();
+            ViewBag.adverts = adverts;
             return View(_newsManager.GetAll());
         }
 

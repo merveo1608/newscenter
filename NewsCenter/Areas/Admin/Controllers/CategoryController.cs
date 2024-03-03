@@ -17,6 +17,8 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "Category";
+
             return View(_categoryManager.GetAll());
         }
 

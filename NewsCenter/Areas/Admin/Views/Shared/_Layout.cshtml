@@ -16,6 +16,12 @@
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> @*Font avasom kütüphanesinin javascript dosyasını iöport ettim*@
 
+    <style>
+        .list-group-item.active
+        {
+            background-color: #0d6efd !important;
+        }
+    </style>
 
 </head>
 <body>
@@ -40,18 +46,18 @@
         <div class="bg-dark text-white" id="sidebar-wrapper">
             <div class="container-fluid">
                 <div class="list-group list-group-flush">
-                    <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white">Anasayfa</a>
+                        <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Home" ? "active" : "") ">Anasayfa</a>
 
                     @* a elementini mvc c# kod ile alternstif olarak kullandım  *@
                         @Html.ActionLink("Kategori", "Index", "Category"
-                            , new { area = "Admin" }, 
-                            new { @class = "list-group-item list-group-item-action bg-dark text-white" }
+                            , new { area = "Admin" },
+                                 new { @class = "list-group-item list-group-item-action bg-dark text-white " + (ViewBag.activeMenu == "Category" ? "active" : "") }
                         )
 
 
-                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white ">Haberler</a>
-                        <a href="~/Admin/Contact" class="list-group-item list-group-item-action bg-dark text-white">İletişim</a>
-                        <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white">Reklam</a>
+                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "News" ? "active" : "") ">Haberler</a>
+                        <a href="~/Admin/Contact" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Contact" ? "active" : "") ">İletişim</a>
+                        <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Advert" ? "active" : "") ">Reklam</a>
                 </div>
             </div>
         </div>

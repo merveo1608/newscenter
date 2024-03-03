@@ -10,17 +10,55 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+                <!-- Website İsmi -->
+                <a class="navbar-brand back bg-danger text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">&nbsp;&nbsp;&nbsp;&nbsp; HABER MERKEZİ &nbsp;&nbsp;&nbsp;&nbsp; </a>
+
+
+                <!-- Navbar Menüleri -->
+                <ul class="navbar-nav mx-auto">
+                    <!-- 'mx-auto' ortalamak için kullanılır -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">ANA SAYFA</a>
+                    </li>
+
+                    @await Component.InvokeAsync("CategoryMenu")
+                </ul>
+
+                <!-- Üye Giriş Butonu -->
+                <button class="btn btn-outline-light ml-2 mr-2 " type="button">Üye Girişi</button>
+                <a class="btn btn-outline-light" type="button" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a>
+            </div>
+        </nav>
+
+        <nav hidden class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             @* <a type="button" href="/CreateCategory" class="btn btn-dark">Giriş</a> *@
             @* yorum satırı burası *@
 
             <div class="container-fluid">
-                <a class="navbar-brand back bg-danger text-white" asp-area="" asp-controller="Home" asp-action="Index">HABER MERKEZİ</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                @Html.Partial("_NavbarPartial")
+
+
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                @* @Html.Partial("_NavbarPartial") *@
             </div>
         </nav>
     </header>

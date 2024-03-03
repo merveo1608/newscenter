@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
@@ -19,6 +20,7 @@ namespace NewsCenter.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "Advert";
 
             return View(_advertManager.GetAll());
         }
@@ -54,9 +56,49 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateAdvert(Advert model)
+        public async Task<IActionResult> UpdateAdvert(Advert model, IFormFile formFile)
         {
+            string oldImageURL = model.ImageURL;
+            #region Resim Yükleme Kodları
+
+            Guid unigueName = Guid.NewGuid();//özel bir isim oluşjturyor benzersiz
+
+            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
+            model.ImageURL = $"/images/{unigueName}{extension}";
+            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+
+            FileStream stream = new FileStream(path, FileMode.Create);
+            formFile.CopyTo(stream);
+            #endregion
+            //reklamı veritabanına güncelle
             await _advertManager.UpdateAsync(model);
+
+            //önceki resmi bul ve sil
+            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{oldImageURL}";
+            
+           
+            if (formFile != null)   //gözat ile yeni bir resim seçilmişse
+            {
+                //bulduğun eski resmi sil
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
+                    //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
+                    try
+                    {
+                        System.GC.Collect();//garbage collectoru çalıştır
+                        System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
+                        System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
+                    }
+                    catch (Exception e)
+                    {
+
+                    }
+                }
+            }
+
+
             return RedirectToAction("Index");
         }
 
@@ -68,7 +110,27 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public async Task<IActionResult> DestroyAdvert(int id)
         {
+            Advert a = await _advertManager.FindAsync(id);
             TempData["Message"] = _advertManager.Destroy(await _advertManager.FindAsync(id));
+
+            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{a.ImageURL}";
+
+            if (System.IO.File.Exists(filePath))
+            {
+                //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
+                //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
+                try
+                {
+                    System.GC.Collect();//garbage collectoru çalıştır
+                    System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
+                    System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
+                }
+                catch (Exception e)
+                {
+
+                }
+            }
+
             return RedirectToAction("Index");
         }
     }

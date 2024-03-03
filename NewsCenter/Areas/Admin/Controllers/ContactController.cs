@@ -16,6 +16,8 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "Contact";
+
             return View(_contactManager.GetAll());
         }
 

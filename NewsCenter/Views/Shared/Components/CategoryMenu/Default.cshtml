@@ -1,0 +1,11 @@
+﻿@model List<Category>
+
+  
+@foreach (Category item in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link @(ViewBag.categoryID == item.ID ? "active" : "")" href="@Url.Action("Index", "Home", new { categoryID = item.ID })">@item.CategoryName</a>
+    </li>
+
+   
+}

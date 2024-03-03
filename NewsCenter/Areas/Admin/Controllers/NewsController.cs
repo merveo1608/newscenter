@@ -21,6 +21,8 @@ namespace NewsCenter.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "News";
+
             return View(_newsManager.GetAll());
         }
 
@@ -64,7 +66,27 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public async Task<IActionResult> DestroyNews(int id)
         {
+            News a = await _newsManager.FindAsync(id);
             TempData["Message"] = _newsManager.Destroy(await _newsManager.FindAsync(id));
+
+            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{a.ImageURL}";
+
+            if (System.IO.File.Exists(filePath))
+            {
+                //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
+                //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
+                try
+                {
+                    System.GC.Collect();//garbage collectoru çalıştır
+                    System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
+                    System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
+                }
+                catch (Exception e)
+                {
+
+                }
+            }
+
             return RedirectToAction("Index");
         }
 
@@ -76,10 +98,55 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateNews(News model)
+        public async Task<IActionResult> UpdateNews(News model, IFormFile formFile)
         {
+
+            string oldImageURL = model.ImageURL;
+
             model.AppUserID = 1;
+
+            #region Resim Yükleme Kodları
+
+            Guid unigueName = Guid.NewGuid();
+
+            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
+            model.ImageURL = $"/images/{unigueName}{extension}";
+            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+
+            FileStream stream = new FileStream(path, FileMode.Create);
+            formFile.CopyTo(stream);
+            #endregion
+
+            //modeli veritabına kaydet/güncelle
             await _newsManager.UpdateAsync(model);
+
+            //önceki resmi bul ve sil
+            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{oldImageURL}";
+
+
+            if (formFile != null)   //gözat ile yeni bir resim seçilmişse
+            {
+                //bulduğun eski resmi sil
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
+                    //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
+                    try
+                    {
+                        System.GC.Collect();//garbage collectoru çalıştır
+                        System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
+                        System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
+                    }
+                    catch (Exception e)
+                    {
+
+                    }
+                }
+            }
+
+
+
             return RedirectToAction("Index");
         }
     }

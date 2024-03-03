@@ -3,7 +3,7 @@
 @{
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-<form asp-action="UpdateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto">
+<form asp-action="UpdateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
 
     <input type="hidden" asp-for="ID" />
 

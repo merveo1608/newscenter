@@ -58,7 +58,7 @@ namespace Project.DAL.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "a4134c21-a2ac-42b3-a9d5-0581227f0631",
+                            ConcurrencyStamp = "ec677ac8-c80b-44c3-ba56-bdfa2ae06b2d",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -291,16 +291,16 @@ namespace Project.DAL.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aa190d66-cfb7-4ef7-82f3-f2826fd4d4af",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 891, DateTimeKind.Utc).AddTicks(6817),
+                            ConcurrencyStamp = "c574b5e8-068c-4779-8e38-d9c9715fe953",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 750, DateTimeKind.Utc).AddTicks(8244),
                             Email = "merveodabas1608@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MERVEODABAS1608@GMAIL.COM",
                             NormalizedUserName = "MERVE123",
-                            PasswordHash = "AQAAAAIAAYagAAAAECjfcqzxpLe96jMWpbKAal+83O8uZalSXg1KtHdSWCZCR+DHrNK5GkEwWWOH0xg5vQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENzU8Ogql0SNSH8RY3nXzf9+MP3CNvy0D4BhSmrEKpgqovgnnVBoiNrshT3qCvbrcA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f4140841-b14d-4dc0-a137-a49b730cb9b9",
+                            SecurityStamp = "9e016880-3f41-4335-8164-af0599d39fe1",
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserName = "merve123"
@@ -349,6 +349,9 @@ namespace Project.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -376,18 +379,18 @@ namespace Project.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CategoryName = "Books",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(7625),
-                            Description = "Bundan göze velit şafak sequi dışarı lambadaki makinesi consectetur çakıl.",
+                            CategoryName = "Jewelery",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(3643),
+                            Description = "Dışarı blanditiis amet bilgisayarı magni totam çakıl ipsa çakıl masaya.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 2,
-                            CategoryName = "Clothing",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(7968),
-                            Description = "Hesap bahar ut dışarı sit voluptatem lambadaki aut eaque bilgisayarı.",
+                            CategoryName = "Home",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4062),
+                            Description = "Dergi quaerat ipsum voluptatem enim ekşili öyle patlıcan magnam doloremque.",
                             SortNumber = 0,
                             Status = 1
                         },
@@ -395,71 +398,71 @@ namespace Project.DAL.Migrations
                         {
                             ID = 3,
                             CategoryName = "Clothing",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8140),
-                            Description = "Beğendim dicta dolores aliquid sed adresini velit ex minima rem.",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4216),
+                            Description = "Lambadaki gül bilgiyasayarı çobanın dergi lakin totam masanın voluptas yapacakmış.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 4,
-                            CategoryName = "Computers",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8214),
-                            Description = "Ki yazın dolor adipisci eaque consequuntur consequatur blanditiis mıknatıslı sit.",
+                            CategoryName = "Beauty",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4289),
+                            Description = "Et ama odit batarya vitae ratione velit explicabo perferendis iure.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 5,
-                            CategoryName = "Garden",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8290),
-                            Description = "Sarmal iure masanın iure tempora sit fugit hesap çorba yaptı.",
+                            CategoryName = "Beauty",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4366),
+                            Description = "Ekşili tempora umut quia voluptate numquam quae in nesciunt ipsum.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 6,
-                            CategoryName = "Books",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8368),
-                            Description = "Gitti eum layıkıyla camisi consequuntur qui ex sit makinesi ipsa.",
+                            CategoryName = "Clothing",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4439),
+                            Description = "Illo aut umut reprehenderit cesurca exercitationem consectetur velit dışarı türemiş.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 7,
-                            CategoryName = "Grocery",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8438),
-                            Description = "Sayfası nihil bundan qui ea voluptate quis sunt perferendis ekşili.",
+                            CategoryName = "Garden",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4599),
+                            Description = "Accusantium değirmeni voluptatem aperiam modi dignissimos autem domates ötekinden voluptas.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 8,
-                            CategoryName = "Industrial",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8549),
-                            Description = "Eve ut quia laboriosam ki göze tempora rem anlamsız nihil.",
+                            CategoryName = "Clothing",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4672),
+                            Description = "Praesentium ut laudantium odio dolore esse ötekinden gül praesentium enim.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 9,
-                            CategoryName = "Toys",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8618),
-                            Description = "Ratione sit enim beatae consequuntur telefonu eaque çıktılar magnam okuma.",
+                            CategoryName = "Baby",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4738),
+                            Description = "Magni ullam sandalye sinema quae çıktılar sandalye çıktılar de telefonu.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 10,
-                            CategoryName = "Movies",
-                            CreatedDate = new DateTime(2024, 2, 24, 9, 49, 35, 951, DateTimeKind.Utc).AddTicks(8687),
-                            Description = "Bilgisayarı balıkhaneye enim cesurca consequuntur patlıcan için koştum gidecekmiş masaya.",
+                            CategoryName = "Health",
+                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4804),
+                            Description = "Accusantium quis kutusu telefonu molestiae corporis mutlu ratione deleniti sokaklarda.",
                             SortNumber = 0,
                             Status = 1
                         });
