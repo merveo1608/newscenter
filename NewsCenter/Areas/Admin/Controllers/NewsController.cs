@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
 using NewsCenter.Areas.Admin.Models;
 using Project.BLL.ManagerServices.Abstracts;
@@ -66,25 +68,34 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public async Task<IActionResult> DestroyNews(int id)
         {
-            News a = await _newsManager.FindAsync(id);
-            TempData["Message"] = _newsManager.Destroy(await _newsManager.FindAsync(id));
-
-            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{a.ImageURL}";
-
-            if (System.IO.File.Exists(filePath))
+            try
             {
-                //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
-                //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
-                try
+                News a = await _newsManager.FindAsync(id);
+                TempData["message"] = _newsManager.Destroy(await _newsManager.FindAsync(id));
+
+                string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{a.ImageURL}";
+
+                if (System.IO.File.Exists(filePath))
                 {
+                    //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
+                    //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
+                   
                     System.GC.Collect();//garbage collectoru çalıştır
                     System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
                     System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
+                
                 }
-                catch (Exception e)
-                {
+            }
+            catch (DbUpdateException ex) when (ex.InnerException is SqlException sqlEx && sqlEx.Number == 547)
+            {
+                // Foreign key ihlaliyle ilgili özel işlem
+                TempData["Message"] = "Bu haberi silemezsiniz, çünkü habere ait yorumlar bulunmaktadır.";
+            }
+            catch (Exception ex)
+            {
+                // Diğer tüm hatalar için genel bir yakalama bloğu
+                TempData["Message"] = "Haberi silme işlemi sırasında bir hata oluştu: " + ex.Message;
 
-                }
             }
 
             return RedirectToAction("Index");
@@ -106,15 +117,19 @@ namespace NewsCenter.Areas.Admin.Controllers
             model.AppUserID = 1;
 
             #region Resim Yükleme Kodları
+            if (formFile != null)
+            {
 
-            Guid unigueName = Guid.NewGuid();
 
-            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
-            model.ImageURL = $"/images/{unigueName}{extension}";
-            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+                Guid unigueName = Guid.NewGuid();
 
-            FileStream stream = new FileStream(path, FileMode.Create);
-            formFile.CopyTo(stream);
+                string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
+                model.ImageURL = $"/images/{unigueName}{extension}";
+                string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+
+                FileStream stream = new FileStream(path, FileMode.Create);
+                formFile.CopyTo(stream);
+            }
             #endregion
 
             //modeli veritabına kaydet/güncelle

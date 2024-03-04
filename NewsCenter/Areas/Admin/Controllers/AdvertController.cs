@@ -61,14 +61,17 @@ namespace NewsCenter.Areas.Admin.Controllers
             string oldImageURL = model.ImageURL;
             #region Resim Yükleme Kodları
 
-            Guid unigueName = Guid.NewGuid();//özel bir isim oluşjturyor benzersiz
+            if (formFile != null)
+            {
+                Guid unigueName = Guid.NewGuid();//özel bir isim oluşjturyor benzersiz
 
-            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
-            model.ImageURL = $"/images/{unigueName}{extension}";
-            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+                string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
+                model.ImageURL = $"/images/{unigueName}{extension}";
+                string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
 
-            FileStream stream = new FileStream(path, FileMode.Create);
-            formFile.CopyTo(stream);
+                FileStream stream = new FileStream(path, FileMode.Create);
+                formFile.CopyTo(stream);
+            }
             #endregion
             //reklamı veritabanına güncelle
             await _advertManager.UpdateAsync(model);

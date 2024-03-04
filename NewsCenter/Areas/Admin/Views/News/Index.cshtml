@@ -4,6 +4,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
+<h5>@TempData["message"]</h5>
 
 <section class="panel">
     <header class="panel-heading">
@@ -35,7 +36,11 @@
                             <td>@item.ID</td>
 
                             <td >
-                                <img src="@item.ImageURL" height="100" />
+                                <a href="@Url.Action("Index", "NewsDetail",new{area="",id = @item.ID})" target="_blank">
+
+                                    <img src="@item.ImageURL" height="100" />
+
+                                </a>
                             </td>
 
                             <td>   @item.Category.CategoryName  </td>

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
@@ -41,7 +43,24 @@ namespace NewsCenter.Areas.Admin.Controllers
 
         public async Task<IActionResult> DestroyCategory(int id)
         {
-            TempData["Message"] = _categoryManager.Destroy(await _categoryManager.FindAsync(id));
+
+            try
+            {
+                TempData["Message"] = _categoryManager.Destroy(await _categoryManager.FindAsync(id));
+
+            }
+
+            catch (DbUpdateException ex) when (ex.InnerException is SqlException sqlEx && sqlEx.Number == 547)
+            {
+                // Foreign key ihlaliyle ilgili özel işlem
+                TempData["Message"] = "Bu kategoriyi silemezsiniz, çünkü kategoriye ait haberler bulunmaktadır.";
+            }
+            catch (Exception ex)
+            {
+                // Diğer tüm hatalar için genel bir yakalama bloğu
+                TempData["Message"] = "Kategori silme işlemi sırasında bir hata oluştu: " + ex.Message;
+
+            }
             return RedirectToAction("Index");
         }
 
