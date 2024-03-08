@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7gWFKqPQCf5uSbtSqyQnijh2uQ2kaDokZVMPCNzgC5o=",
+  "Hash": "X1SplThW6+PDecOllSO9WkH2OjO/faP1x7TmPfk64js=",
   "Source": "NewsCenter",
   "BasePath": "_content/NewsCenter",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "NewsCenter\\wwwroot",
       "Source": "NewsCenter",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "Pattern": "**"
     }
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "C:\\Users\\merve\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NewsCenter.styles.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NewsCenter.styles.css",
       "SourceId": "NewsCenter",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "NewsCenter.styles.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NewsCenter.styles.css"
+      "OriginalItemSpec": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NewsCenter.styles.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NewsCenter.bundle.scp.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NewsCenter.bundle.scp.css",
       "SourceId": "NewsCenter",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "NewsCenter.bundle.scp.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NewsCenter.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NewsCenter.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\css\\site.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\favicon.ico",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\132d962b-1147-4e53-aa62-99cbd7eded4c.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\132d962b-1147-4e53-aa62-99cbd7eded4c.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/132d962b-1147-4e53-aa62-99cbd7eded4c.jpg",
       "AssetKind": "All",
@@ -169,10 +169,29 @@
       "OriginalItemSpec": "wwwroot\\images\\132d962b-1147-4e53-aa62-99cbd7eded4c.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\1b745de3-ac6c-4d94-8747-983456927a4c.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\15f55f7b-3d58-4819-8b30-98c239a1297a.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/15f55f7b-3d58-4819-8b30-98c239a1297a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\15f55f7b-3d58-4819-8b30-98c239a1297a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\1b745de3-ac6c-4d94-8747-983456927a4c.jpg",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/1b745de3-ac6c-4d94-8747-983456927a4c.jpg",
       "AssetKind": "All",
@@ -188,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1b745de3-ac6c-4d94-8747-983456927a4c.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg",
       "AssetKind": "All",
@@ -207,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg",
       "AssetKind": "All",
@@ -226,10 +245,48 @@
       "OriginalItemSpec": "wwwroot\\images\\203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\2847cafa-6bdc-41e2-8c78-14a7c7c92712.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/2847cafa-6bdc-41e2-8c78-14a7c7c92712.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2847cafa-6bdc-41e2-8c78-14a7c7c92712.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\2e33ca19-1e80-47ed-a6ef-6a43e541e0f6.jpg",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/2e33ca19-1e80-47ed-a6ef-6a43e541e0f6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2e33ca19-1e80-47ed-a6ef-6a43e541e0f6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg",
       "AssetKind": "All",
@@ -245,10 +302,29 @@
       "OriginalItemSpec": "wwwroot\\images\\3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\493145c2-3b5d-4b9e-8038-b0b7060fcce3.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\43f7fa0f-f056-41c9-961f-e7b303060197.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/43f7fa0f-f056-41c9-961f-e7b303060197.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\43f7fa0f-f056-41c9-961f-e7b303060197.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\493145c2-3b5d-4b9e-8038-b0b7060fcce3.png",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/493145c2-3b5d-4b9e-8038-b0b7060fcce3.png",
       "AssetKind": "All",
@@ -264,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\493145c2-3b5d-4b9e-8038-b0b7060fcce3.png"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\52bf1862-2cfd-4605-b68a-fe4e9233c54e.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\52bf1862-2cfd-4605-b68a-fe4e9233c54e.png",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/52bf1862-2cfd-4605-b68a-fe4e9233c54e.png",
       "AssetKind": "All",
@@ -283,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\52bf1862-2cfd-4605-b68a-fe4e9233c54e.png"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg",
       "AssetKind": "All",
@@ -302,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg",
       "AssetKind": "All",
@@ -321,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7520b698-9cf8-453a-b495-844f19840618.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7520b698-9cf8-453a-b495-844f19840618.png",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/7520b698-9cf8-453a-b495-844f19840618.png",
       "AssetKind": "All",
@@ -340,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7520b698-9cf8-453a-b495-844f19840618.png"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7903b281-d8c2-430b-b804-8dc99eae7608.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7903b281-d8c2-430b-b804-8dc99eae7608.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/7903b281-d8c2-430b-b804-8dc99eae7608.jpg",
       "AssetKind": "All",
@@ -359,10 +435,29 @@
       "OriginalItemSpec": "wwwroot\\images\\7903b281-d8c2-430b-b804-8dc99eae7608.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7d138a3b-5255-454e-be73-6c6adbf59e3c.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/7d138a3b-5255-454e-be73-6c6adbf59e3c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7d138a3b-5255-454e-be73-6c6adbf59e3c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png",
       "AssetKind": "All",
@@ -378,29 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\9070c4c5-16e0-4714-9bd8-481af1b76e5b.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
-      "BasePath": "_content/NewsCenter",
-      "RelativePath": "images/9070c4c5-16e0-4714-9bd8-481af1b76e5b.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\9070c4c5-16e0-4714-9bd8-481af1b76e5b.png"
-    },
-    {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg",
-      "SourceId": "NewsCenter",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg",
       "AssetKind": "All",
@@ -416,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\a258ce0e-3cf5-4a03-ab57-c94c602804ba.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\a258ce0e-3cf5-4a03-ab57-c94c602804ba.png",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/a258ce0e-3cf5-4a03-ab57-c94c602804ba.png",
       "AssetKind": "All",
@@ -435,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a258ce0e-3cf5-4a03-ab57-c94c602804ba.png"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg",
       "AssetKind": "All",
@@ -454,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\c1955113-6fa1-4432-84df-432d89740e59.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\c1955113-6fa1-4432-84df-432d89740e59.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/c1955113-6fa1-4432-84df-432d89740e59.jpg",
       "AssetKind": "All",
@@ -473,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c1955113-6fa1-4432-84df-432d89740e59.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\cb323505-16f3-4245-8959-36956b092108.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\cb323505-16f3-4245-8959-36956b092108.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/cb323505-16f3-4245-8959-36956b092108.jpg",
       "AssetKind": "All",
@@ -492,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cb323505-16f3-4245-8959-36956b092108.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg",
       "AssetKind": "All",
@@ -511,12 +587,12 @@
       "OriginalItemSpec": "wwwroot\\images\\d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\dcf71429-2360-4290-a0df-7a4b683cd372.png",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\dd6fcd23-1b36-4f3a-a7aa-e08eb294e616.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
-      "RelativePath": "images/dcf71429-2360-4290-a0df-7a4b683cd372.png",
+      "RelativePath": "images/dd6fcd23-1b36-4f3a-a7aa-e08eb294e616.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -527,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\dcf71429-2360-4290-a0df-7a4b683cd372.png"
+      "OriginalItemSpec": "wwwroot\\images\\dd6fcd23-1b36-4f3a-a7aa-e08eb294e616.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg",
       "AssetKind": "All",
@@ -549,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\ef34b214-c2c2-400f-a338-92466c5858a2.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\ef34b214-c2c2-400f-a338-92466c5858a2.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/ef34b214-c2c2-400f-a338-92466c5858a2.jpg",
       "AssetKind": "All",
@@ -568,10 +644,29 @@
       "OriginalItemSpec": "wwwroot\\images\\ef34b214-c2c2-400f-a338-92466c5858a2.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f26fb645-9ddd-4b5a-8784-82b8321b320f.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/f26fb645-9ddd-4b5a-8784-82b8321b320f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f26fb645-9ddd-4b5a-8784-82b8321b320f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg",
       "AssetKind": "All",
@@ -587,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "images/f7c02935-8292-4586-bd0d-aeaeb2378781.jpg",
       "AssetKind": "All",
@@ -606,10 +701,29 @@
       "OriginalItemSpec": "wwwroot\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\fff1a904-e637-4924-b073-74e1c829607c.jpg",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/fff1a904-e637-4924-b073-74e1c829607c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fff1a904-e637-4924-b073-74e1c829607c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\js\\site.js",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -625,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -644,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -663,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -682,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -701,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -720,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -739,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -758,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -777,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -796,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -815,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -834,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -853,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -872,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -891,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -910,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -929,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -948,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -967,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -986,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1005,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1024,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1043,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1062,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1081,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1100,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1119,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1138,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1157,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1176,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1195,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1214,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1233,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1252,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1271,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1290,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1309,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1328,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1347,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1366,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1385,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1404,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1423,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1442,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1461,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1480,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1499,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1518,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1537,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1556,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1575,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1594,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1613,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1632,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1651,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1670,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1689,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "NewsCenter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\",
       "BasePath": "_content/NewsCenter",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

@@ -4,6 +4,8 @@ using Project.ENTITIES.Models;
 
 namespace NewsCenter.Controllers
 {
+
+    //websitenin anasayfasındaki header alanında bulunan haber categorilerini veritabnından çekip göstermek için bu component kullanıldı.
     public class CategoryMenuViewComponent : ViewComponent
     {
        private readonly ICategoryManager _categoryManager;

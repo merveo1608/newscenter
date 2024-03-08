@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/kwfi329KghmIDdPwvv+0a7173rKD9M8QOcoL3kNOsszjK3ZDsA+sQxgT44csW4zvMWK07B+xLHHA1fTAOXgxw==",
+  "dgSpecHash": "19Dk6nRg7iIbXVhuTUAkOcZKdq+QjMXPbUZe2fYNseTtIfGjYXplsHrToRuZheAXc4VWpCF+IPmlrIibS6tBRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj",
+  "projectFilePath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merve\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\merve\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

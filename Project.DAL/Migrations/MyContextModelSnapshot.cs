@@ -58,7 +58,7 @@ namespace Project.DAL.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "ec677ac8-c80b-44c3-ba56-bdfa2ae06b2d",
+                            ConcurrencyStamp = "ed68dbf5-8bc8-4b78-85a7-2fdd8ee37c37",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -291,16 +291,16 @@ namespace Project.DAL.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c574b5e8-068c-4779-8e38-d9c9715fe953",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 750, DateTimeKind.Utc).AddTicks(8244),
+                            ConcurrencyStamp = "f9a9d6dc-82b4-47bb-ba12-782d60944425",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 116, DateTimeKind.Utc).AddTicks(1486),
                             Email = "merveodabas1608@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MERVEODABAS1608@GMAIL.COM",
                             NormalizedUserName = "MERVE123",
-                            PasswordHash = "AQAAAAIAAYagAAAAENzU8Ogql0SNSH8RY3nXzf9+MP3CNvy0D4BhSmrEKpgqovgnnVBoiNrshT3qCvbrcA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG3aw4ekncOrqF+ki1TzKtT156GyTTk98LX1EHJCcOC1+WuCewVDpGSahIhFzn/5NQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9e016880-3f41-4335-8164-af0599d39fe1",
+                            SecurityStamp = "397ffa1a-d6e9-4ce0-b979-c2da97bf8a48",
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserName = "merve123"
@@ -379,90 +379,90 @@ namespace Project.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CategoryName = "Jewelery",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(3643),
-                            Description = "Dışarı blanditiis amet bilgisayarı magni totam çakıl ipsa çakıl masaya.",
+                            CategoryName = "Outdoors",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(7479),
+                            Description = "Makinesi adanaya mıknatıslı gazete ki voluptatem veritatis velit kutusu sıradanlıktan.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 2,
-                            CategoryName = "Home",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4062),
-                            Description = "Dergi quaerat ipsum voluptatem enim ekşili öyle patlıcan magnam doloremque.",
+                            CategoryName = "Electronics",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(7996),
+                            Description = "Cesurca commodi un reprehenderit velit karşıdakine ekşili adanaya architecto quis.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 3,
-                            CategoryName = "Clothing",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4216),
-                            Description = "Lambadaki gül bilgiyasayarı çobanın dergi lakin totam masanın voluptas yapacakmış.",
+                            CategoryName = "Baby",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8085),
+                            Description = "Çobanın hesap corporis quia dergi consequatur ea odio sit veritatis.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 4,
-                            CategoryName = "Beauty",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4289),
-                            Description = "Et ama odit batarya vitae ratione velit explicabo perferendis iure.",
+                            CategoryName = "Home",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8259),
+                            Description = "Vel de ullam koşuyorlar modi telefonu quasi eum ona un.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 5,
-                            CategoryName = "Beauty",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4366),
-                            Description = "Ekşili tempora umut quia voluptate numquam quae in nesciunt ipsum.",
+                            CategoryName = "Electronics",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8339),
+                            Description = "Labore enim dolores layıkıyla fugit quia et rem suscipit eve.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 6,
-                            CategoryName = "Clothing",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4439),
-                            Description = "Illo aut umut reprehenderit cesurca exercitationem consectetur velit dışarı türemiş.",
+                            CategoryName = "Games",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8422),
+                            Description = "Dolores kutusu yazın ışık biber çıktılar quis aliquam eve sunt.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 7,
-                            CategoryName = "Garden",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4599),
-                            Description = "Accusantium değirmeni voluptatem aperiam modi dignissimos autem domates ötekinden voluptas.",
+                            CategoryName = "Home",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8496),
+                            Description = "Enim exercitationem gülüyorum et un aspernatur kutusu deleniti suscipit qui.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 8,
-                            CategoryName = "Clothing",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4672),
-                            Description = "Praesentium ut laudantium odio dolore esse ötekinden gül praesentium enim.",
+                            CategoryName = "Grocery",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8597),
+                            Description = "Bundan eve kutusu nemo kalemi quis neque neque sarmal masanın.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 9,
-                            CategoryName = "Baby",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4738),
-                            Description = "Magni ullam sandalye sinema quae çıktılar sandalye çıktılar de telefonu.",
+                            CategoryName = "Outdoors",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8666),
+                            Description = "Sit commodi blanditiis ipsam hesap voluptas nihil quia tv ötekinden.",
                             SortNumber = 0,
                             Status = 1
                         },
                         new
                         {
                             ID = 10,
-                            CategoryName = "Health",
-                            CreatedDate = new DateTime(2024, 2, 28, 20, 25, 42, 811, DateTimeKind.Utc).AddTicks(4804),
-                            Description = "Accusantium quis kutusu telefonu molestiae corporis mutlu ratione deleniti sokaklarda.",
+                            CategoryName = "Movies",
+                            CreatedDate = new DateTime(2024, 3, 8, 8, 12, 58, 177, DateTimeKind.Utc).AddTicks(8737),
+                            Description = "Koşuyorlar ratione voluptatum ab ışık türemiş velit masaya voluptatem hesap.",
                             SortNumber = 0,
                             Status = 1
                         });
@@ -477,6 +477,9 @@ namespace Project.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<int>("AppUserID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CommentStatus")
                         .HasColumnType("int");
 
                     b.Property<string>("CommentText")
@@ -528,10 +531,6 @@ namespace Project.DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -690,7 +689,7 @@ namespace Project.DAL.Migrations
             modelBuilder.Entity("Project.ENTITIES.Models.Contact", b =>
                 {
                     b.HasOne("Project.ENTITIES.Models.AppUser", "AppUser")
-                        .WithMany()
+                        .WithMany("Contacts")
                         .HasForeignKey("AppUserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -724,6 +723,8 @@ namespace Project.DAL.Migrations
             modelBuilder.Entity("Project.ENTITIES.Models.AppUser", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Contacts");
 
                     b.Navigation("News");
 

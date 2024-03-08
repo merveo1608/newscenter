@@ -1,0 +1,66 @@
+﻿@model List<Comment>
+
+@{
+
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+
+}
+
+
+<h4 class="fw-bold">@TempData["Message"]</h4>
+<section class="panel">
+    <div class="panel-body">
+        <div class="adv-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Kullanıcı</th>
+                        <th scope="col">Haber Başlığı</th>
+                        <th scope="col">Yorum</th>
+                        <th scope="col">Onay Durumu</th>
+                        <th scope="col">Oluşturulma Tarihi</th>
+                        <th scope="col">Güncellenme Tarihi</th>
+                        <th scope="col">Silinme Tarihi</th>
+                        <th class="hidden-phone">İşlemler</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Comment item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@item.ID</th>
+                            <td>@item.AppUser.Profile.FirstName @item.AppUser.Profile.LastName </td>
+                            <th scope="row"><a target="_blank" href="@Url.Action("Index", "NewsDetail", new {area = "" , id = item.News.ID })">@item.News.Header</a></th>
+                            <td>@item.CommentText  </td>
+                            <td>@item.CommentStatus</td>
+                            <td>@item.CreatedDate </td>
+                            <td>@item.ModifiedDate </td>
+                            <td>@item.DeletedDate</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-cog"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a asp-action="ConfirmComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-check"></i> Onayla</a></li>
+                                        <li><a asp-action="RevorkComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-history"></i> Onayı Geri Al</a></li>
+                                        <li><a asp-action="RejectComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-ban"></i> Reddet</a></li>
+                                        <li><a asp-action="DeleteComment" asp-route-id="@item.ID" class="dropdown-item"> <i class="fas fa-eraser"></i>  Sil </a> </li>
+                                        <li><a asp-action="DestroyComment" asp-route-id="@item.ID" class="dropdown-item"> <i class="fas fa-trash"></i>
+                                            Yok Et </a> </li>
+                                    </ul>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+

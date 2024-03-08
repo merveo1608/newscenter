@@ -8,6 +8,11 @@
 <form asp-action="CreateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
 
     <div class="mb-3">
+        <label>Yayın Tarihi</label>
+        <input asp-for="News.PublishDate" type="datetime-local" class="form-control" />
+    </div>
+
+    <div class="mb-3">
         <label>Kategori Seciniz</label>
         @Html.DropDownListFor(model => model.News.CategoryID, new SelectList(ViewBag.categories, "ID", "CategoryName"), "-", new { @class = "form-control" })
     </div>

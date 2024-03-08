@@ -27,6 +27,7 @@ namespace Project.ENTITIES.Models
         public virtual AppUserProfile Profile { get; set; }
         public virtual ICollection<News> News { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Contact> Contacts { get; set; }
 
     }
 }

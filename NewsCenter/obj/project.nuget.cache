@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WEQ0qNdNw1CMNDbG0SCO5KgRtw9jySgmsiIhiWWK2Z0OOzZJfcNedIP/p+VKUSVtFBq4QXxSOH2rjyBs85231A==",
+  "dgSpecHash": "P9bGu9kMyAIUyk6YWnTd/erzfwfRV04iEsJfpIZOnSMKeWq4Au60hOHz7BdriEziI+QDSRk0ufK+aMrpMUaHsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj",
+  "projectFilePath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merve\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\merve\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {}
+    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj": {
+    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
+        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
         "projectName": "Project.CONF",
-        "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
+        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.CONF\\obj\\",
+        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
-                "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj"
+              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
+                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {
+    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
         "projectName": "Project.DAL",
-        "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
+        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.DAL\\obj\\",
+        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj": {
-                "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj"
+              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj": {
+                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
+    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
+        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
         "projectName": "Project.ENTITIES",
-        "projectPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
+        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\Desktop\\Projeler\\newscenter\\Project.ENTITIES\\obj\\",
+        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",

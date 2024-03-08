@@ -1,0 +1,53 @@
+﻿@model Contact
+
+<h4>@TempData["message"]</h4>
+<div class="card w-50 mb-3">
+    <div class="card-body">
+        <form asp-controller="Contact" asp-action="Index" method="post" class="p-3 w-75 m-auto">
+          @*   <div class="mb-3">
+                <label class="form-label fw-bold">AD SOYAD</label>
+                <input asp-for="" class="form-control" placeholder="Adınızı Soyadınızı Giriniz">
+            </div> *@
+
+          @*   <div class="mb-3">
+                <label class="form-label fw-bold">E-POSTA</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="E-posta adresinizi giriniz">
+            </div>
+ *@
+            <div class="mb-3">
+                <label class="form-label fw-bold">MESAJ KONUSU</label>
+                <select asp-for="Subject" class="form-control">
+                    <option value="0"></option>
+                    <option value="1">İstek</option>
+                    <option value="2">Öneri</option>
+                    <option value="3">Şikayet</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">MESAJ</label>
+                <textarea asp-for="Description" class="form-control" rows="5" placeholder="Meajınızı giriniz"> </textarea>
+            </div>
+            @if (!ViewData.ModelState.IsValid)
+            {
+              <div class="validation-summary-errors">
+                  <ul>
+                        @foreach(var key in ViewData.ModelState.Keys)
+                        {
+                            @foreach (var error in ViewData.ModelState[key].Errors)
+                            {
+                                <li>
+                                    @error.ErrorMessage
+                                </li>
+                            }
+                        }
+                    </ul>
+              </div>  
+            }
+            <button type="submit" class="btn btn-primary w-100">MESAJI GÖNDER</button>
+        </form>
+    </div>
+</div>
+
+
+

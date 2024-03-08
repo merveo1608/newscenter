@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NewsCenter.styles.css" asp-append-version="true" />
+    <style>
+        body
+        {
+            background-color: #e6e6e6;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,13 +30,18 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">ANA SAYFA</a>
                     </li>
+                  
 
                     @await Component.InvokeAsync("CategoryMenu")
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Contact" asp-action="Index">İLETİŞİM</a>
+                    </li>
                 </ul>
 
                 <!-- Üye Giriş Butonu -->
-                <button class="btn btn-outline-light ml-2 mr-2 " type="button">Üye Girişi</button>
-                <a class="btn btn-outline-light" type="button" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a>
+                <a class="btn btn-outline-light ml-2 mr-2 " asp-controller="User" asp-action="Login">Üye Girişi</a>
+                <a class="btn btn-outline-light"  asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a>
             </div>
         </nav>
 
@@ -67,12 +78,34 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - NewsCenter - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div class="container bg-dark text-white">
+        <footer class="mt-5 d-flex justify-content-between">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget velit ac quam consequat ultricies.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <address>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </address>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#">Twitter</a></li>
+                    <li class="list-inline-item"><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 Your Website. All rights reserved.</p>
+            </div>
         </div>
-    </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

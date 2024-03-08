@@ -31,7 +31,7 @@ namespace NewsCenter.Controllers
             cm.NewsID = id;
 
             //Habere ait tüm yorumlar
-            List<Comment> commentList = _commentManager.Where(x=>x.NewsID == id).ToList() ;
+            List<Comment> commentList = _commentManager.Where(x=>x.NewsID == id && x.CommentStatus == CommentStatus.Approved).ToList() ;
             ViewBag.Comments = commentList;
             return View(cm);
         }
@@ -41,6 +41,7 @@ namespace NewsCenter.Controllers
         public async Task<IActionResult> CreateComment(Comment comment)
         {
             comment.AppUserID = 1;
+            comment.CommentStatus = CommentStatus.PendingApproval;
             await _commentManager.AddAsync(comment);
             return RedirectToAction("Index", new {ID = comment.NewsID});
         }
