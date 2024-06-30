@@ -3167,11 +3167,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj",
+      "projectUniqueName": "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj",
       "projectName": "Project.BLL",
-      "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj",
+      "projectPath": "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj",
       "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\obj\\",
+      "outputPath": "C:\\Projects\\newscenter\\Project.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3188,8 +3188,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {
-              "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj"
+            "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj": {
+              "projectPath": "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj"
             }
           }
         }
@@ -3198,6 +3198,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3225,7 +3230,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

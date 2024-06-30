@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7ckPcsbfWgzpze3sF4I4LuhMmBI9aXczD8e5Q0cmQsdly+90A8GXdnkGWFranJ2p6GE3AeF+1+aOdk6qBZJpA==",
+  "dgSpecHash": "GiSPEagwVyinBbJUmSvxmwVyD0Q+VicJIWzcL5M0d0w5767b1OCTNF5JOT1YyC2xbt7gY0ZY/33Jn1ToMO5j7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
+  "projectFilePath": "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merve\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\merve\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

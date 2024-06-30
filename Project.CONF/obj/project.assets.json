@@ -836,11 +836,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
+      "projectUniqueName": "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj",
       "projectName": "Project.CONF",
-      "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
+      "projectPath": "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj",
       "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\obj\\",
+      "outputPath": "C:\\Projects\\newscenter\\Project.CONF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -857,8 +857,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
-              "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj"
+            "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
+              "projectPath": "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj"
             }
           }
         }
@@ -867,6 +867,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -894,7 +899,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

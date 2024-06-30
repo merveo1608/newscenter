@@ -8671,11 +8671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj",
+      "projectUniqueName": "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj",
       "projectName": "NewsCenter",
-      "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj",
+      "projectPath": "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj",
       "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\",
+      "outputPath": "C:\\Projects\\newscenter\\NewsCenter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8692,11 +8692,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj": {
-              "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj"
+            "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj": {
+              "projectPath": "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj"
             },
-            "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
-              "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj"
+            "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
+              "projectPath": "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj"
             }
           }
         }
@@ -8705,6 +8705,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8765,7 +8770,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj": {}
+    "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj": {
+    "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj",
+        "projectUniqueName": "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj",
         "projectName": "NewsCenter",
-        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\NewsCenter.csproj",
+        "projectPath": "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\",
+        "outputPath": "C:\\Projects\\newscenter\\NewsCenter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj": {
-                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj"
+              "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj": {
+                "projectPath": "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj"
               },
-              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
-                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj"
+              "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
+                "projectPath": "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj"
               }
             }
           }
@@ -41,6 +41,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -101,18 +106,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj": {
+    "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj",
+        "projectUniqueName": "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj",
         "projectName": "Project.BLL",
-        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\Project.BLL.csproj",
+        "projectPath": "C:\\Projects\\newscenter\\Project.BLL\\Project.BLL.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.BLL\\obj\\",
+        "outputPath": "C:\\Projects\\newscenter\\Project.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -129,8 +134,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {
-                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj"
+              "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj": {
+                "projectPath": "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj"
               }
             }
           }
@@ -139,6 +144,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -166,18 +176,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
+    "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj",
+        "projectUniqueName": "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj",
         "projectName": "Project.COMMON",
-        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\Project.COMMON.csproj",
+        "projectPath": "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.COMMON\\obj\\",
+        "outputPath": "C:\\Projects\\newscenter\\Project.COMMON\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -200,6 +210,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -221,18 +236,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj": {
+    "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
+        "projectUniqueName": "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj",
         "projectName": "Project.CONF",
-        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj",
+        "projectPath": "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\obj\\",
+        "outputPath": "C:\\Projects\\newscenter\\Project.CONF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -249,8 +264,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
-                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj"
+              "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
+                "projectPath": "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj"
               }
             }
           }
@@ -259,6 +274,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -286,18 +306,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj": {
+    "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
+        "projectUniqueName": "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj",
         "projectName": "Project.DAL",
-        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\Project.DAL.csproj",
+        "projectPath": "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.DAL\\obj\\",
+        "outputPath": "C:\\Projects\\newscenter\\Project.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -314,8 +334,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj": {
-                "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.CONF\\Project.CONF.csproj"
+              "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj": {
+                "projectPath": "C:\\Projects\\newscenter\\Project.CONF\\Project.CONF.csproj"
               }
             }
           }
@@ -324,6 +344,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -365,18 +390,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
+    "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
+        "projectUniqueName": "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
         "projectName": "Project.ENTITIES",
-        "projectPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
+        "projectPath": "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
         "packagesPath": "C:\\Users\\merve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\obj\\",
+        "outputPath": "C:\\Projects\\newscenter\\Project.ENTITIES\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -399,6 +424,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -430,7 +460,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

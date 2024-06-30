@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "luWChPvkfx9G6De8zVzM8YmrQLzHaOI/nphNCLiKfv2u+M6GPk1R+Q3mHZIpJRu8FKkwJRf0Kd1QKFJqOMchqA==",
+  "dgSpecHash": "YWpJE/vjUJoWfOl08SzMUiHjiPx9N96iRnsxT+SDysDg3mG7pkaKnScyzSO2uTsge1bcfwwfMhCXyV3Ty4SX3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
+  "projectFilePath": "C:\\Projects\\newscenter\\Project.ENTITIES\\Project.ENTITIES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merve\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.0\\microsoft.aspnetcore.cryptography.internal.8.0.0.nupkg.sha512",
     "C:\\Users\\merve\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.0\\microsoft.aspnetcore.cryptography.keyderivation.8.0.0.nupkg.sha512",
