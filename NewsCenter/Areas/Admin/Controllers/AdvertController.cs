@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
@@ -6,7 +7,9 @@ using Project.ENTITIES.Models;
 
 namespace NewsCenter.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
 
     public class AdvertController : Controller
     {

@@ -1,371 +1,371 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NewsCenter.bundle.scp.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NewsCenter.bundle.scp.css",
       "PackagePath": "staticwebassets\\NewsCenter.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\css\\site.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\favicon.ico",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg",
       "PackagePath": "staticwebassets\\images\\04dcea95-544a-4d1a-8add-3d9709a34bf4.jpeg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\132d962b-1147-4e53-aa62-99cbd7eded4c.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\132d962b-1147-4e53-aa62-99cbd7eded4c.jpg",
       "PackagePath": "staticwebassets\\images\\132d962b-1147-4e53-aa62-99cbd7eded4c.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\15f55f7b-3d58-4819-8b30-98c239a1297a.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\15f55f7b-3d58-4819-8b30-98c239a1297a.jpg",
       "PackagePath": "staticwebassets\\images\\15f55f7b-3d58-4819-8b30-98c239a1297a.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\1b745de3-ac6c-4d94-8747-983456927a4c.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\1b745de3-ac6c-4d94-8747-983456927a4c.jpg",
       "PackagePath": "staticwebassets\\images\\1b745de3-ac6c-4d94-8747-983456927a4c.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg",
       "PackagePath": "staticwebassets\\images\\1d8e32e7-adfd-47c2-912c-ab7603f836d7.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg",
       "PackagePath": "staticwebassets\\images\\203f46c7-df9d-48e3-bda3-f9ab1fbeaab3.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\2847cafa-6bdc-41e2-8c78-14a7c7c92712.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\2847cafa-6bdc-41e2-8c78-14a7c7c92712.jpg",
       "PackagePath": "staticwebassets\\images\\2847cafa-6bdc-41e2-8c78-14a7c7c92712.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\2e33ca19-1e80-47ed-a6ef-6a43e541e0f6.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\2e33ca19-1e80-47ed-a6ef-6a43e541e0f6.jpg",
       "PackagePath": "staticwebassets\\images\\2e33ca19-1e80-47ed-a6ef-6a43e541e0f6.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg",
       "PackagePath": "staticwebassets\\images\\3d72b86a-75f6-4094-ab14-5c347bc06ff1.jpeg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\43f7fa0f-f056-41c9-961f-e7b303060197.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\43f7fa0f-f056-41c9-961f-e7b303060197.jpg",
       "PackagePath": "staticwebassets\\images\\43f7fa0f-f056-41c9-961f-e7b303060197.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\493145c2-3b5d-4b9e-8038-b0b7060fcce3.png",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\493145c2-3b5d-4b9e-8038-b0b7060fcce3.png",
       "PackagePath": "staticwebassets\\images\\493145c2-3b5d-4b9e-8038-b0b7060fcce3.png"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\52bf1862-2cfd-4605-b68a-fe4e9233c54e.png",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\52bf1862-2cfd-4605-b68a-fe4e9233c54e.png",
       "PackagePath": "staticwebassets\\images\\52bf1862-2cfd-4605-b68a-fe4e9233c54e.png"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg",
       "PackagePath": "staticwebassets\\images\\66ec9761-d2fc-47fa-a153-cf4af1a4200e.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg",
       "PackagePath": "staticwebassets\\images\\6f90fbef-d78d-44d7-b702-7d3ebb10cbf6.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7520b698-9cf8-453a-b495-844f19840618.png",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\7520b698-9cf8-453a-b495-844f19840618.png",
       "PackagePath": "staticwebassets\\images\\7520b698-9cf8-453a-b495-844f19840618.png"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7903b281-d8c2-430b-b804-8dc99eae7608.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\7903b281-d8c2-430b-b804-8dc99eae7608.jpg",
       "PackagePath": "staticwebassets\\images\\7903b281-d8c2-430b-b804-8dc99eae7608.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\7d138a3b-5255-454e-be73-6c6adbf59e3c.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\7d138a3b-5255-454e-be73-6c6adbf59e3c.jpg",
       "PackagePath": "staticwebassets\\images\\7d138a3b-5255-454e-be73-6c6adbf59e3c.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png",
       "PackagePath": "staticwebassets\\images\\8ced7ccc-1cc0-42b0-96f3-d9ae5b9f7ff3.png"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg",
       "PackagePath": "staticwebassets\\images\\9cda8a8f-ceea-45fa-b7ea-e47af43f15d7.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\a258ce0e-3cf5-4a03-ab57-c94c602804ba.png",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\a258ce0e-3cf5-4a03-ab57-c94c602804ba.png",
       "PackagePath": "staticwebassets\\images\\a258ce0e-3cf5-4a03-ab57-c94c602804ba.png"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg",
       "PackagePath": "staticwebassets\\images\\c0627bf6-a633-462b-9c59-fd243bf3b9f2.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\c1955113-6fa1-4432-84df-432d89740e59.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\c1955113-6fa1-4432-84df-432d89740e59.jpg",
       "PackagePath": "staticwebassets\\images\\c1955113-6fa1-4432-84df-432d89740e59.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\cb323505-16f3-4245-8959-36956b092108.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\cb323505-16f3-4245-8959-36956b092108.jpg",
       "PackagePath": "staticwebassets\\images\\cb323505-16f3-4245-8959-36956b092108.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg",
       "PackagePath": "staticwebassets\\images\\d0e85e4d-2819-44fc-9b45-842f7ec31689.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\dd6fcd23-1b36-4f3a-a7aa-e08eb294e616.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\dd6fcd23-1b36-4f3a-a7aa-e08eb294e616.jpg",
       "PackagePath": "staticwebassets\\images\\dd6fcd23-1b36-4f3a-a7aa-e08eb294e616.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg",
       "PackagePath": "staticwebassets\\images\\ecc1de9d-0770-4f64-ac47-a779a5c233cf.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\ef34b214-c2c2-400f-a338-92466c5858a2.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\ef34b214-c2c2-400f-a338-92466c5858a2.jpg",
       "PackagePath": "staticwebassets\\images\\ef34b214-c2c2-400f-a338-92466c5858a2.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f26fb645-9ddd-4b5a-8784-82b8321b320f.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\f26fb645-9ddd-4b5a-8784-82b8321b320f.jpg",
       "PackagePath": "staticwebassets\\images\\f26fb645-9ddd-4b5a-8784-82b8321b320f.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg",
       "PackagePath": "staticwebassets\\images\\f3d66274-05a1-4726-a386-0e8f56fcbb70.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg",
       "PackagePath": "staticwebassets\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\images\\fff1a904-e637-4924-b073-74e1c829607c.jpg",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\fff1a904-e637-4924-b073-74e1c829607c.jpg",
       "PackagePath": "staticwebassets\\images\\fff1a904-e637-4924-b073-74e1c829607c.jpg"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\js\\site.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\merve\\OneDrive\\Masaüstü\\Projeler\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

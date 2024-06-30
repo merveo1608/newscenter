@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NewsCenter.Models.AppUsers;
+using Newtonsoft.Json;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
@@ -25,6 +26,7 @@ namespace NewsCenter.Controllers
            
             return View();
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Register(UserRegisterModel r)
@@ -62,37 +64,54 @@ namespace NewsCenter.Controllers
             return View();
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> SignIn(UserRegisterModel model)
+        public async Task<IActionResult> SignIn(LoginViewModel model)
         {
-            AppUser appUser = await _userManager.FindByNameAsync(model.UserName);
-            //bURAYA BİRLİKTE BAKIN MİCROSOFT IDENTİTY EKNDİ EKLEDİ
-            Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(appUser, model.Password, true, true);
-            if (result.Succeeded)
-            {
-                IList<string> roles = await _userManager.GetRolesAsync(appUser);
-                if (roles.Contains("Admin"))
-                {
-                    return RedirectToAction("Index", "Category", new { Area = "Admin" });
-                }
-                else if (roles.Contains("Member"))
-                {
-                    return RedirectToAction("Privacy"); //todo ShoppingTool
-                }
-                return RedirectToAction("Panel");
-            }
-            else if (result.IsNotAllowed)
-            {
-                return RedirectToAction("MailPanel");
-            }
-            TempData["Message"] = "Kullanıcı bulunamadı";
 
-            return RedirectToAction("SignIn");
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
 
+                var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, model.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
+
+                    // Kullanıcı girişi başarılı olduysa AppUser nesnesini Session'a kaydet
+                    string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
+                    {
+                        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                    });
+
+                    HttpContext.Session.SetString("AppUser", userData);
+
+
+                    IList<string> roles = await _userManager.GetRolesAsync(appUser);
+                    if (roles.Contains("Member"))
+                    {
+                        return RedirectToAction("Home"); //todo ShoppingTool
+                    }
+                    else 
+                    {
+                        //return RedirectToAction("SignIn","User"); //todo ShoppingTool
+                        return RedirectToAction("Index", "Home", new { Area = "Admin" });
+                    }
+                }
+
+                ModelState.AddModelError(string.Empty, "Giriş Bilgieriniz Hatalı, Kontrol Ediniz !");
+            }
+
+            return View(model);
         }
 
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            HttpContext.Session.Remove("AppUser");
+            return RedirectToAction("SignIn", "User");
+        }
 
         public IActionResult Profile()
         {

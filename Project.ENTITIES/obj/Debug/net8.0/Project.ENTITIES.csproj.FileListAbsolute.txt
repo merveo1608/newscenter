@@ -36,3 +36,16 @@ C:\Users\merve\OneDrive\Masaüstü\Projeler\newscenter\Project.ENTITIES\obj\Debu
 C:\Users\merve\OneDrive\Masaüstü\Projeler\newscenter\Project.ENTITIES\obj\Debug\net8.0\refint\Project.ENTITIES.dll
 C:\Users\merve\OneDrive\Masaüstü\Projeler\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.pdb
 C:\Users\merve\OneDrive\Masaüstü\Projeler\newscenter\Project.ENTITIES\obj\Debug\net8.0\ref\Project.ENTITIES.dll
+C:\Projects\newscenter\Project.ENTITIES\bin\Debug\net8.0\Project.ENTITIES.deps.json
+C:\Projects\newscenter\Project.ENTITIES\bin\Debug\net8.0\Project.ENTITIES.dll
+C:\Projects\newscenter\Project.ENTITIES\bin\Debug\net8.0\Project.ENTITIES.pdb
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.csproj.AssemblyReference.cache
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.AssemblyInfoInputs.cache
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.AssemblyInfo.cs
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.csproj.CoreCompileInputs.cache
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.sourcelink.json
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.dll
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\refint\Project.ENTITIES.dll
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\Project.ENTITIES.pdb
+C:\Projects\newscenter\Project.ENTITIES\obj\Debug\net8.0\ref\Project.ENTITIES.dll

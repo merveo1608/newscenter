@@ -1,91 +1,74 @@
-﻿@*Bu bir html dökümanıdır*@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    Layout = null; // Layout belirtilmemiş oluyor
+    var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
+    var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
+}
+
 <!DOCTYPE html>
 <html>
 <head>
-    @*Bu dökümanın karakter kümesi utf8 dir yani utf8 e ait klavye karakterlerini kullanılablir kılar*@
-    <meta charset="utf-8=" />
-
-    @*Bu dökümanın farklı cihazlarda responsive ayralarını yapar(telefon tablet laptop gibi cihazlarda ekran boyutuna göre nasıl gözükeceğini ayarlar.) *@
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Admin Paneli  </title>
-
-    @*Bootstrap css kullanılabilmesi için dosyaları çağırdım. Bootstrap css kodalrını uzun uzun yazmak yerine çok kısa tasarım kodları yazmamızı sağlayan bir kütüphanedir.*@
+    <title>Admin Paneli</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> @*Font avasome icon kütüphanesiin css dosyasını import ettim*@
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> @*Bootsrapin çalışması için Javascript kütüphanesini ekledim*@
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> @*Font avasom kütüphanesinin javascript dosyasını import ettim*@
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <style>
-        .list-group-item.active
-        {
+        .list-group-item.active {
             background-color: #0d6efd !important;
         }
     </style>
-
 </head>
 <body>
-   @*  <header class="bg-primary fw-bold text-white">
-        <h1> Admin Paneli </h1>
-        <button type="button" class="btn btn-primary float-end">Çıkış</button>
 
-    </header> *@
-    <nav class="navbar  bg-primary">
+  
+
+    <nav class="navbar bg-primary">
         <div class="container-fluid">
-            <a  class="navbar-brand text-white fw-bold">Admin Paneli</a>
-                <a type="button" href="/Home" class="btn btn-dark" >Çıkış</a>
-            
+            <a class="navbar-brand text-white fw-bold">Admin Paneli</a>
+            @if (User != null && SignInManager.IsSignedIn(User))
+            {
+                <a type="button" class="btn btn-secondary"> @user.UserName </a>
+            }
+
+
+            <form asp-area="" asp-controller="User" asp-action="Logout" method="post">
+                <button type="submit" class="btn btn-dark">Çıkış</button>
+            </form>
+
+            @* <a type="button" href="/User/Signin" class="btn btn-dark">Çıkış</a> *@
         </div>
     </nav>
+
     <div class="row">
-
         <div class="col-2">
-
-
-            @* sol menü(side bar) *@
-        <div class="bg-dark text-white" id="sidebar-wrapper">
-            <div class="container-fluid">
-                <div class="list-group list-group-flush">
-                        <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Home" ? "active" : "") ">Anasayfa</a>
-
-                    @* a elementini mvc c# kod ile alternstif olarak kullandım  *@
-                        @Html.ActionLink("Kategori", "Index", "Category"
-                            , new { area = "Admin" },
-                                 new { @class = "list-group-item list-group-item-action bg-dark text-white " + (ViewBag.activeMenu == "Category" ? "active" : "") }
-                        )
-
-
-                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "News" ? "active" : "") ">Haberler</a>
-                        <a href="~/Admin/Contact" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Contact" ? "active" : "") ">İletişim</a>
-                        <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Advert" ? "active" : "") ">Reklam</a>
-                        <a href="~/Admin/Comment" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Comment" ? "active" : "") ">Yorumlar</a>
+            <div class="bg-dark text-white" id="sidebar-wrapper">
+                <div class="container-fluid">
+                    <div class="list-group list-group-flush">
+                        <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Home" ? "active" : "")">Anasayfa</a>
+                        @Html.ActionLink("Kategori", "Index", "Category", new { area = "Admin" }, new { @class = "list-group-item list-group-item-action bg-dark text-white " + (ViewBag.activeMenu == "Category" ? "active" : "") })
+                        <a href="/Admin/News" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "News" ? "active" : "")">Haberler</a>
+                        <a href="~/Admin/Contact" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Contact" ? "active" : "")">İletişim</a>
+                        <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Advert" ? "active" : "")">Reklam</a>
+                        <a href="~/Admin/Comment" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Comment" ? "active" : "")">Yorumlar</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-        </div>
-
-
-        <div class="col-10 bg-light ">
+        <div class="col-10 bg-light">
             <div class="p-3">
-
-
-                @* @ karakteri ile başlayark html içerisine c^kod yazılabilir. Burda ise bu şablonu kullanmak isteyen alt sayfalar ile bağlantı kuruldu*@
                 @RenderBody()
             </div>
-
-
         </div>
-
     </div>
 
-
-
 </body>
-
-
-
 </html>

@@ -1,8 +1,10 @@
-using Microsoft.Extensions.DependencyInjection;
+ï»¿using Microsoft.Extensions.DependencyInjection;
 using Project.BLL.ServiceInjections;
 using NewsCenter.EmailService;
 using NewsCenter.Models;
 using Project.COREMVC.EmailService;
+using Microsoft.AspNetCore.Identity;
+using System.Configuration;
 
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -12,12 +14,12 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDistributedMemoryCache(); //Eger Session kompleks yapýlarla calýsmak icin Extension metodu eklenme durumuna maruz kalmýssa bu kod projenizin saglýklý calýsmasý icin gereklidir...
+builder.Services.AddDistributedMemoryCache(); //Eger Session kompleks yapÃ½larla calÃ½smak icin Extension metodu eklenme durumuna maruz kalmÃ½ssa bu kod projenizin saglÃ½klÃ½ calÃ½smasÃ½ icin gereklidir...
 
 builder.Services.AddSession(x =>
 {
-    x.IdleTimeout = TimeSpan.FromMinutes(5); //Projeyi kiþinin bos durma süresi eger 1 dakikalýk bir bos durma süresi olursa Session bosa cýksýn...
-    x.Cookie.HttpOnly = true; //document.cookie'den ilgili bilginin gözlemlenmesi
+    x.IdleTimeout = TimeSpan.FromMinutes(5); //Projeyi kiÃ¾inin bos durma sÃ¼resi eger 1 dakikalÃ½k bir bos durma sÃ¼resi olursa Session bosa cÃ½ksÃ½n...
+    x.Cookie.HttpOnly = true; //document.cookie'den ilgili bilginin gÃ¶zlemlenmesi
     x.Cookie.IsEssential = true;
 });
 
@@ -26,6 +28,17 @@ builder.Services.AddIdentityServices();
 builder.Services.AddDbContextService(); //DbContextService'imizi BLL'den alarak Middleware'e ekledik...
 builder.Services.AddRepServices();
 builder.Services.AddManagerServices();
+
+//session kullanmak iÃ§in
+builder.Services.AddHttpContextAccessor();
+
+
+
+builder.Services.AddControllersWithViews()
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        });
 
 builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSettings"));
 
