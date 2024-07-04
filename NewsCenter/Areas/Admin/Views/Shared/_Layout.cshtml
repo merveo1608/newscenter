@@ -33,24 +33,36 @@
     <nav class="navbar bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand text-white fw-bold">Admin Paneli</a>
-            @if (User != null && SignInManager.IsSignedIn(User))
-            {
-                <a type="button" class="btn btn-secondary"> @user.UserName </a>
-            }
 
 
             <form asp-area="" asp-controller="User" asp-action="Logout" method="post">
-                <button type="submit" class="btn btn-dark">Çıkış</button>
+                @if (User != null && SignInManager.IsSignedIn(User))
+                {
+               
+
+                    <a type="button" class="btn btn-dark"> 
+
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+
+                        @user.Profile.FirstName @user.Profile.LastName
+                    </a>
+                }
+                <button type="submit" class="btn btn-dark">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Çıkış
+                </button>
             </form>
 
             @* <a type="button" href="/User/Signin" class="btn btn-dark">Çıkış</a> *@
         </div>
     </nav>
 
-    <div class="row">
+    <div class="row mt-2">
         <div class="col-2">
             <div class="bg-dark text-white" id="sidebar-wrapper">
-                <div class="container-fluid">
                     <div class="list-group list-group-flush">
                         <a href="/Admin/Home" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Home" ? "active" : "")">Anasayfa</a>
                         @Html.ActionLink("Kategori", "Index", "Category", new { area = "Admin" }, new { @class = "list-group-item list-group-item-action bg-dark text-white " + (ViewBag.activeMenu == "Category" ? "active" : "") })
@@ -59,7 +71,6 @@
                         <a href="~/Admin/Advert" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Advert" ? "active" : "")">Reklam</a>
                         <a href="~/Admin/Comment" class="list-group-item list-group-item-action bg-dark text-white @(ViewBag.activeMenu == "Comment" ? "active" : "")">Yorumlar</a>
                     </div>
-                </div>
             </div>
         </div>
 
