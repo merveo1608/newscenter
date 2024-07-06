@@ -10,7 +10,7 @@
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 
                         <li class="nav-item" role="presentation">
-                            <a asp-controller="User" asp-action="Login">Giriş</a>
+                            <a asp-controller="User" asp-action="SignIn">Giriş</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Kayıt</button>
@@ -19,22 +19,27 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                             <form asp-controller="User" asp-action="Register" method="post" class="p-1 w-100 m-auto">
+                                
                                 <div class="mb-3">
-                                    <label  class="form-label">Kullanıcı Adı</label>
-                                    <input asp-for="UserName" type="text" class="form-control" >
-                                </div> 
-                                <div class="mb-3">
-                                    <label class="form-label">E-posta</label>
+                                    <label class="form-label">E-mail</label>
                                     <input asp-for="Email" type="email" class="form-control">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1">
+                                    <label  class="form-label">Şifre</label>
+                                    <input asp-for="Password" type="password" class="form-control">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label  class="form-label">Şifre(Tekrar)</label>
+                                    <input asp-for="PasswordConfirm" type="password" class="form-control" >
                                 </div>
                                 <button type="submit" class="btn btn-primary">Kayıt Ol</button>
                             </form>
+
                         </div>
                     </div>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
                 </div>
             </div>
         </div>

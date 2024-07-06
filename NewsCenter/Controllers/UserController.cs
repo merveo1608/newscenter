@@ -31,30 +31,33 @@ namespace NewsCenter.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserRegisterModel r)
         {
-            AppUser appUser = new()
-            {
-                UserName = r.UserName,
-                Email = r.Email,
-            };
-            IdentityResult result = await _userManager.CreateAsync(appUser, r.Password);
-            if (result.Succeeded)
-            {
-                AppUserProfile appUserProfile = new()
-                {
-                   ID = appUser.ID
-                };
+            ModelState.AddModelError(string.Empty, "Şifreleriniz aynı değil konttrol ediniz");
 
-                TempData["Message"] = "Üyelik kaydınız başarılı";
-                return RedirectToAction("Profile", appUserProfile);
+            return View(r);
+            //AppUser appUser = new()
+            //{
+            //    UserName = r.UserName,
+            //    Email = r.Email,
+            //};
+            //IdentityResult result = await _userManager.CreateAsync(appUser, r.Password);
+            //if (result.Succeeded)
+            //{
+            //    AppUserProfile appUserProfile = new()
+            //    {
+            //       ID = appUser.ID
+            //    };
 
-            }
-            else
-            {
+            //    TempData["Message"] = "Üyelik kaydınız başarılı";
+            //    return RedirectToAction("Profile", appUserProfile);
 
-                TempData["Message"] = result.Errors.FirstOrDefault().Description;
-                return RedirectToAction("Register");
+            //}
+            //else
+            //{
 
-            }
+            //    TempData["Message"] = result.Errors.FirstOrDefault().Description;
+            //    return RedirectToAction("Register");
+
+            //}
 
 
         }
