@@ -53,12 +53,14 @@
                 <!-- Üye Giriş Butonu -->
                 <a class="btn btn-outline-light ml-2 mr-2 " asp-controller="User" asp-action="SignIn">Giriş</a>
 
-                @if (User != null )
+                @if (User != null&& user!= null )
+
                 {
 
-                    @* @user.Id *@
 
-                    <span class="text-white">Oturum Açlışmış</span>
+
+
+                    <span class="text-white"> @user.Profile.FirstName @user.Profile.LastName</span>
                 }
             </div>
         </nav>
