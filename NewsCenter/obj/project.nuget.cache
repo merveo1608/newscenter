@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZGeGsfXc7nVJ1Rl0lKz+Eq52+ibjLF+MneqPh2uFlubMP1uiVXj8aFr8uBEXRVA7g9B5vmhOgjBqlTDjZ4n9qQ==",
+  "dgSpecHash": "Poo8sR0IqY2Fvhlsn/KErA0jdciCWPnfxIRt7KdZ0kYM+p8uwcatKyR8e3HU5h/roResT8x/lq5xyhwgtfeJIA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\newscenter\\NewsCenter\\NewsCenter.csproj",
   "expectedPackageFiles": [
@@ -187,5 +187,16 @@
     "C:\\Users\\merve\\.nuget\\packages\\x.pagedlist\\8.4.7\\x.pagedlist.8.4.7.nupkg.sha512",
     "C:\\Users\\merve\\.nuget\\packages\\x.pagedlist.mvc.core\\8.4.7\\x.pagedlist.mvc.core.8.4.7.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MimeKit' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5",
+      "libraryId": "MimeKit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

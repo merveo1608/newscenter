@@ -1,4 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@* oturum açmış kullanıcının bilgilerini kontrol etmek için bu 3 kütüphaneyi ekledim. *@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
+    var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -41,7 +52,14 @@
 
                 <!-- Üye Giriş Butonu -->
                 <a class="btn btn-outline-light ml-2 mr-2 " asp-controller="User" asp-action="SignIn">Giriş</a>
-                @* <a class="btn btn-outline-light"  asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a> *@
+
+                @if (User != null )
+                {
+
+                    @* @user.Id *@
+
+                    <span class="text-white">Oturum Açlışmış</span>
+                }
             </div>
         </nav>
 
