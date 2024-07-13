@@ -50,8 +50,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T11:42:16.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-13T11:42:16.433Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\NewsController.cs",
               "ViewState": "AQIAAFIAAAAAAAAAAAAmwGEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T12:13:05.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T12:13:05.319Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAAJEAAAAAAAAAAAApwJ0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T12:13:05.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T12:13:05.335Z"
             },
             {
               "$type": "Document",
