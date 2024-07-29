@@ -23,6 +23,15 @@ builder.Services.AddSession(x =>
     x.Cookie.IsEssential = true;
 });
 
+// Configure authentication and authorization
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/User/Login";
+    options.LogoutPath = "/User/Logout";
+    // AccessDeniedPath ayarını ana sayfaya yönlendirmek için değiştiriyoruz
+    options.AccessDeniedPath = "/Home";
+});
+
 builder.Services.AddIdentityServices();
 
 builder.Services.AddDbContextService(); //DbContextService'imizi BLL'den alarak Middleware'e ekledik...

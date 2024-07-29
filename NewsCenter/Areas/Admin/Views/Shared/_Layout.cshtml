@@ -8,6 +8,8 @@
     Layout = null; // Layout belirtilmemiş oluyor
     var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
     var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
+    var rolesData = HttpContextAccessor.HttpContext.Session.GetString("Roles");
+    string name = "merve";
 }
 
 <!DOCTYPE html>
@@ -38,7 +40,10 @@
             <form asp-area="" asp-controller="User" asp-action="Signout" method="post">
                 @if (User != null && SignInManager.IsSignedIn(User))
                 {
-               
+               if (rolesData != null)
+                    {
+                        @rolesData.ToString(); 
+                    }
 
                     <a type="button" class="btn btn-dark"> 
 

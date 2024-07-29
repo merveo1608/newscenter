@@ -170,7 +170,12 @@ namespace NewsCenter.Controllers
 
 
                     IList<string> roles = await _userManager.GetRolesAsync(appUser);
-                    if (roles.Contains("Visitor"))
+                        if (roles.Count() > 0)
+                        {
+                            HttpContext.Session.SetString("Roles", string.Join(",", roles));
+
+                        }
+                        if (roles.Contains("Visitor"))
                     {
                         return RedirectToAction("Index", "Home"); //todo ShoppingTool
                     }

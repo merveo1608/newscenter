@@ -6,6 +6,7 @@ using Project.DAL.ContextClasses;
 namespace NewsCenter.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,Editor")] // Sadece Admin ve editör rolüne sahip kullanıcılar erişebilir
     public class HomeController : Controller
     {
 

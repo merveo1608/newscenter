@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Project.BLL.ManagerServices.Abstracts;
@@ -9,7 +10,7 @@ using Project.ENTITIES.Models;
 namespace NewsCenter.Areas.Admin.Controllers
 {
     [Area("Admin")]
-
+    [Authorize(Roles = "Admin,Editor")]
     public class CommentController : Controller
     {
         readonly ICommentManager _commentManager;

@@ -9,8 +9,7 @@ using Project.ENTITIES.Models;
 namespace NewsCenter.Areas.Admin.Controllers
 {
     [Area("Admin")]
-
-    [Authorize]
+    [Authorize(Roles = "Admin,Editor")]
     public class CategoryController : Controller
     {
         readonly ICategoryManager _categoryManager;
