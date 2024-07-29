@@ -35,7 +35,7 @@
             <a class="navbar-brand text-white fw-bold">Admin Paneli</a>
 
 
-            <form asp-area="" asp-controller="User" asp-action="Logout" method="post">
+            <form asp-area="" asp-controller="User" asp-action="Signout" method="post">
                 @if (User != null && SignInManager.IsSignedIn(User))
                 {
                

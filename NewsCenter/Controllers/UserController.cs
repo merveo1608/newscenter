@@ -190,7 +190,7 @@ namespace NewsCenter.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Signout()
         {
             await _signInManager.SignOutAsync();
             HttpContext.Session.Remove("AppUser");
