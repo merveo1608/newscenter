@@ -1,12 +1,12 @@
 ﻿@* oturum açmış kullanıcının bilgilerini kontrol etmek için bu 3 kütüphaneyi ekledim. *@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUser> SignInManager
-@inject UserManager<AppUser> UserManager
-@using Newtonsoft.Json
-@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@* @inject UserManager<AppUser> UserManager *@
+@* @using Newtonsoft.Json *@
+@* @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor *@
 @{
-    var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
-    var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
+    // var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
+    // var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
 }
 
 <!DOCTYPE html>
@@ -63,11 +63,12 @@
                     <a class="btn btn-outline-light ml-2 mr-2 " asp-controller="User" asp-action="SignIn">Giriş</a>
                 } *@
 
-                    @if (User != null && SignInManager.IsSignedIn(User))
+                    @if (SignInManager.IsSignedIn(User))
                     {
                     <form asp-area="" asp-controller="User" asp-action="Signout" method="post">
 
 
+                        @Html.ActionLink("AdminPanel", "Index", "Home", new { area = "Admin" }, new { @class = "btn btn-dark" })
 
                         <a type="button" class="btn btn-dark">
 
@@ -76,7 +77,7 @@
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                             </svg>
 
-                            @user.Profile.FirstName @user.Profile.LastName
+                            @User.Identity.Name
                         </a>
                         <button type="submit" class="btn btn-dark">
                             <i class="fas fa-sign-out-alt"></i>

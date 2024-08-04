@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using NewsCenter.Areas.Admin.Models;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
+using System.Security.Claims;
 
 namespace NewsCenter.Areas.Admin.Controllers
 {
@@ -47,18 +49,20 @@ namespace NewsCenter.Areas.Admin.Controllers
         public async Task<IActionResult> CreateNews(News news, IFormFile formFile)
         {
             #region Resim Yükleme Kodları
+            if(formFile != null)
+            {
+                Guid unigueName = Guid.NewGuid();
 
-            Guid unigueName = Guid.NewGuid();
+                string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
+                news.ImageURL = $"/images/{unigueName}{extension}";
+                string path = $"{Directory.GetCurrentDirectory()}/wwwroot{news.ImageURL}";
 
-            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
-            news.ImageURL = $"/images/{unigueName}{extension}";
-            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{news.ImageURL}";
-
-            FileStream stream = new FileStream(path, FileMode.Create);
-            formFile.CopyTo(stream);
+                FileStream stream = new FileStream(path, FileMode.Create);
+                formFile.CopyTo(stream);
+            }
             #endregion
 
-            news.AppUserID = 1;
+            news.AppUserID = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Kullanıcı ID'si
             await _newsManager.AddAsync(news);
             return RedirectToAction("Index");
         }

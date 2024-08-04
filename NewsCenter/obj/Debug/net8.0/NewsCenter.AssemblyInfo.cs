@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NewsCenter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb930bd333880b5d5e5a17f792c7cc0ab815934c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac3fb096ddb4fab0c5d21298056b671798fbd1f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("NewsCenter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NewsCenter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

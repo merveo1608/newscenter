@@ -1,15 +1,15 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUser> SignInManager
-@inject UserManager<AppUser> UserManager
+@* @inject UserManager<AppUser> UserManager
 @using Newtonsoft.Json
-@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor *@
 
 @{
     Layout = null; // Layout belirtilmemiş oluyor
-    var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
-    var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
-    var rolesData = HttpContextAccessor.HttpContext.Session.GetString("Roles");
-    string name = "merve";
+    // var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
+    // var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
+    // var rolesData = HttpContextAccessor.HttpContext.Session.GetString("Roles");
+    // string name = "merve";
 }
 
 <!DOCTYPE html>
@@ -38,21 +38,17 @@
 
 
             <form asp-area="" asp-controller="User" asp-action="Signout" method="post">
-                @if (User != null && SignInManager.IsSignedIn(User))
+                @if (SignInManager.IsSignedIn(User))
                 {
-               if (rolesData != null)
-                    {
-                        @rolesData.ToString(); 
-                    }
+                    @Html.ActionLink("Website", "Index", "Home", new { area = "" }, new { @class = "btn btn-dark" })
 
                     <a type="button" class="btn btn-dark"> 
 
-                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
-
-                        @user.Profile.FirstName @user.Profile.LastName
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        @User.Identity.Name
                     </a>
                 }
                 <button type="submit" class="btn btn-dark">
