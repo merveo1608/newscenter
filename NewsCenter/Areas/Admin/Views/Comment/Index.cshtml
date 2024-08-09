@@ -1,9 +1,13 @@
 ﻿@model List<Comment>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
 
 @{
 
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml"; //Bu sayfa bu adresteki layouta bağlı olarak çalışsın
 
+    var user = await UserManager.GetUserAsync(User); // Oturum açmış kullanıcıyı alıyoruz.
 
 }
 
@@ -23,7 +27,13 @@
                         <th scope="col">Oluşturulma Tarihi</th>
                         <th scope="col">Güncellenme Tarihi</th>
                         <th scope="col">Silinme Tarihi</th>
-                        <th class="hidden-phone">İşlemler</th>
+                        @{
+                            if (user != null && await UserManager.IsInRoleAsync(user, "Admin")) // kullanıcı rollerinde admin varsa işlemler yazısını göster.
+                            {
+                                <th class="hidden-phone">İşlemler</th>
+                            }
+
+                        }
 
                     </tr>
                 </thead>
@@ -39,22 +49,33 @@
                             <td>@item.CreatedDate </td>
                             <td>@item.ModifiedDate </td>
                             <td>@item.DeletedDate</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-cog"></i>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a asp-action="ConfirmComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-check"></i> Onayla</a></li>
-                                        <li><a asp-action="RevorkComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-history"></i> Onayı Geri Al</a></li>
-                                        <li><a asp-action="RejectComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-ban"></i> Reddet</a></li>
-                                        <li><a asp-action="DeleteComment" asp-route-id="@item.ID" class="dropdown-item"> <i class="fas fa-eraser"></i>  Sil </a> </li>
-                                        <li><a asp-action="DestroyComment" asp-route-id="@item.ID" class="dropdown-item"> <i class="fas fa-trash"></i>
-                                            Yok Et </a> </li>
-                                    </ul>
-                                </div>
+                            @{
+                                if (user != null && await UserManager.IsInRoleAsync(user, "Admin")) // kullanıcı rollerinde admin varsa işlemler yazısını göster.
+                                {
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-cog"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a asp-action="ConfirmComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-check"></i> Onayla</a></li>
+                                                <li><a asp-action="RevorkComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-history"></i> Onayı Geri Al</a></li>
+                                                <li><a asp-action="RejectComment" asp-route-id="@item.ID" type="button" class="dropdown-item"> <i class="fas fa-ban"></i> Reddet</a></li>
+                                                <li><a asp-action="DeleteComment" asp-route-id="@item.ID" class="dropdown-item"> <i class="fas fa-eraser"></i>  Sil </a> </li>
+                                                <li>
+                                                    <a asp-action="DestroyComment" asp-route-id="@item.ID" class="dropdown-item">
+                                                        <i class="fas fa-trash"></i>
+                                                        Yok Et
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                            </td>
+                                    </td>
+                                }
+
+                            }
+                           
 
                         </tr>
                     }

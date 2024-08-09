@@ -6,6 +6,7 @@ using Project.ENTITIES.Enums;
 using Project.ENTITIES.Models;
 using System.CodeDom;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace NewsCenter.Controllers
 {
@@ -40,7 +41,7 @@ namespace NewsCenter.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateComment(Comment comment)
         {
-            comment.AppUserID = 1;
+            comment.AppUserID = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier)); // oturum açmış olan kullanıcının ıdsi
             comment.CommentStatus = CommentStatus.PendingApproval;
             await _commentManager.AddAsync(comment);
             return RedirectToAction("Index", new {ID = comment.NewsID});
