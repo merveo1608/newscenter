@@ -141,7 +141,8 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\AdvertController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T08:53:56.456Z"
+              "WhenOpened": "2024-07-29T08:53:56.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -153,7 +154,8 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\NewsController.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAA0wEsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T08:53:56.472Z"
+              "WhenOpened": "2024-07-29T08:53:56.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -165,7 +167,8 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\CommentController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T08:53:56.472Z"
+              "WhenOpened": "2024-07-29T08:53:56.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
