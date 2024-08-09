@@ -1,6 +1,6 @@
 ﻿using NewsCenter.Models;
 
-namespace Project.COREMVC.EmailService
+namespace Project.NewsCenter.EmailService
 {
     public interface IEmailService
     {

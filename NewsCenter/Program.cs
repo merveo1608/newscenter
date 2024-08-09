@@ -2,7 +2,7 @@
 using Project.BLL.ServiceInjections;
 using NewsCenter.EmailService;
 using NewsCenter.Models;
-using Project.COREMVC.EmailService;
+using Project.NewsCenter.EmailService;
 using Microsoft.AspNetCore.Identity;
 using System.Configuration;
 

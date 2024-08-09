@@ -3,7 +3,7 @@ using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
 using NewsCenter.Models;
-using Project.COREMVC.EmailService;
+using Project.NewsCenter.EmailService;
 using System.Net;
 
 

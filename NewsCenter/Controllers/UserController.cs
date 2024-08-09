@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
+using Project.COMMON.Tools;
 
 namespace NewsCenter.Controllers
 {
@@ -85,13 +86,21 @@ namespace NewsCenter.Controllers
                     //kullanıcı oturum açmış olarak ayarla (singınmanager ıdentitty içinde var.)
                     AppUser appUser = await _userManager.FindByEmailAsync(user.Email);
 
+                    #region sessiona veri kaydetme kodları
                     // Kullanıcı girişi başarılı olduysa AppUser nesnesini Session'a kaydet
-                    string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
-                    {
-                        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                    });
+                    //string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
+                    //{
+                    //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                    //});
+                    //HttpContext.Session.SetString("AppUser", userData);
+                    #endregion
 
-                    HttpContext.Session.SetString("AppUser", userData);
+                    #region üyelik doğrulama maili gönder
+                    string body = $"Hesabınız olusturulmustur.Üyeliginizi onaylamak icin lütfen http://localhost:5016/Home/ConfirmEmail?id={appUser.Id} linkine tıklayınız";
+                    MailService.Send(r.Email, body: body);
+
+                    TempData["Message"] = "Emailinizi kontrol ediniz";
+                    #endregion
 
                     return RedirectToAction("Index", "Home");
 
