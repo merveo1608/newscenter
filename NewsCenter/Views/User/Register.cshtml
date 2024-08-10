@@ -1,7 +1,6 @@
 ﻿@model UserRegisterModel
 
 
-<h4>@TempData["Message"]</h4>
 <div class="container">
     <div class="row justify-content-center mt-2" style="height:100vh;">
         <div class="col-md-4">
@@ -46,9 +45,14 @@
                                 <button type="submit" class="btn btn-primary">Kayıt Ol</button>
                             </form>
 
+                            
+
+                          
                         </div>
                     </div>
                     <div asp-validation-summary="All" class="text-danger"></div>
+                    <h4 class="text-danger">@TempData["Message"]</h4>
+
 
                 </div>
             </div>

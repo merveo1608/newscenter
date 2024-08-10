@@ -6,6 +6,7 @@ using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
 using Project.COMMON.Tools;
+using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
 
 namespace NewsCenter.Controllers
 {
@@ -96,13 +97,13 @@ namespace NewsCenter.Controllers
                     #endregion
 
                     #region üyelik doğrulama maili gönder
-                    string body = $"Hesabınız olusturulmustur.Üyeliginizi onaylamak icin lütfen http://localhost:5016/Home/ConfirmEmail?id={appUser.Id} linkine tıklayınız";
-                    MailService.Send(r.Email, body: body);
+                    string body = $"Hesabınız olusturulmustur.Üyeliginizi onaylamak icin lütfen http://localhost:5089/User/ConfirmEmail?id={appUser.Id} linkine tıklayınız";
+                    MailService.Send(r.Email, body: body,subject:"News Center Yeni Üye Kaydı Doğrulama");
 
-                    TempData["Message"] = "Emailinizi kontrol ediniz";
+                    TempData["Message"] = "Kayıt işlemi başarılı, Emailinizi kontrol ediniz,Kayıt işleminizi tamamlamak için, gelen maildeki linke tıklayın!";
                     #endregion
 
-                    return RedirectToAction("Index", "Home");
+    
 
 
                 }
@@ -144,6 +145,23 @@ namespace NewsCenter.Controllers
 
         }
 
+        public async Task<IActionResult> ConfirmEmail(int id)
+        {
+            // Kullanıcıyı Id ile bulma
+            AppUser appUser = await _userManager.FindByIdAsync(id.ToString());
+
+            // Email'i onaylanmış olarak işaretleme
+            appUser.EmailConfirmed = true;
+
+            // Kullanıcı bilgilerini güncelleme
+            await _userManager.UpdateAsync(appUser);
+
+            // Kullanıcıyı oturum açmış gibi işaretleme
+            await _signInManager.SignInAsync(appUser, isPersistent: false);
+
+            // Ana sayfaya yönlendirme
+            return RedirectToAction("Index", "Home");
+        }
 
         public IActionResult SignIn()
         {
@@ -165,25 +183,43 @@ namespace NewsCenter.Controllers
                 }else
                 {
                  var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, model.RememberMe, false);
-                 if (result.Succeeded)
+                    if (user.EmailConfirmed != true)
+                    {
+                        //mail gönderme kodları
+                        #region üyelik doğrulama maili gönder
+                        string body = $"Üyeliginizi onaylamak icin lütfen http://localhost:5089/User/ConfirmEmail?id={user.Id} linkine tıklayınız";
+                        MailService.Send(user.Email, body: body, subject: "News Center Yeni Üye Kaydı Doğrulama");
+
+                        #endregion
+
+
+                        ModelState.AddModelError(string.Empty, "Emailiniz onaylanmamış, onaylama maili tekrar gönderilmiştir mail kutunuzu kontrol ediniz");
+
+                    }
+                    else if(result.Succeeded != true)
+                    {
+                        ModelState.AddModelError(string.Empty, "Giriş Bilgieriniz Hatalı, Kontrol Ediniz !");
+
+                    }
+                    else if (result.Succeeded)
                 {
                     AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
 
                     // Kullanıcı girişi başarılı olduysa AppUser nesnesini Session'a kaydet
-                    string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
-                    {
-                        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                    });
+                    //string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
+                    //{
+                    //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                    //});
 
-                    HttpContext.Session.SetString("AppUser", userData);
+                    //HttpContext.Session.SetString("AppUser", userData);
 
 
                     IList<string> roles = await _userManager.GetRolesAsync(appUser);
-                        if (roles.Count() > 0)
-                        {
-                            HttpContext.Session.SetString("Roles", string.Join(",", roles));
+                        //if (roles.Count() > 0)
+                        //{
+                        //    HttpContext.Session.SetString("Roles", string.Join(",", roles));
 
-                        }
+                        //}
                         if (roles.Contains("Visitor"))
                     {
                         return RedirectToAction("Index", "Home"); //todo ShoppingTool
@@ -196,7 +232,6 @@ namespace NewsCenter.Controllers
                 }
                 }
 
-                ModelState.AddModelError(string.Empty, "Giriş Bilgieriniz Hatalı, Kontrol Ediniz !");
             }
 
             return View(model);
