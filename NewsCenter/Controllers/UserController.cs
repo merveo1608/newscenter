@@ -266,7 +266,25 @@ namespace NewsCenter.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Profile(AppUser updatedUser)
-        { // Oturum açmış kullanıcının ID'sini al
+        {
+            // Oturum açmış kullanıcının ID'sini al
+            var userId = _userManager.GetUserId(User);
+
+            // Oturum açmış kullanıcının bilgilerini al
+            var appUser = await _userManager.FindByIdAsync(userId);
+            appUser.Email = updatedUser.Email;
+            appUser.Profile.FirstName = updatedUser.Profile.FirstName;
+            appUser.Profile.LastName = updatedUser.Profile.LastName;
+            // Kullanıcı bilgilerini güncelleme
+            await _userManager.UpdateAsync(appUser);
+
+
+            // Kullanıcıyı oturum açmış gibi işaretleme
+            await _signInManager.SignInAsync(appUser, isPersistent: false);
+
+            return View(updatedUser);
+
+         // Oturum açmış kullanıcının ID'sini al
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -274,9 +292,9 @@ namespace NewsCenter.Controllers
             }
 
             // Kullanıcı profil bilgilerini güncelle
-            user.FirstName = updatedUser.FirstName;
-            user.LastName = updatedUser.LastName;
-            user.Address = updatedUser.Address;
+            //user.FirstName = updatedUser.FirstName;
+            //user.LastName = updatedUser.LastName;
+            //user.Address = updatedUser.Address;
             user.Email = updatedUser.Email; // E-posta gibi diğer alanlar
 
             // Kullanıcı bilgilerini güncelle ve sonucu kontrol et
