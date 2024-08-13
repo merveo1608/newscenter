@@ -40,7 +40,9 @@
         <button type="submit" class="btn btn-primary">Giriş Yap</button>
     </div>
     <div class="form-group">
-        <a asp-page="/Account/ForgotPassword">Şifremi Unuttum</a>
+        @* <a asp-page="/User/ForgetPassword">Şifremi Unuttum.</a> *@
+     @Html.ActionLink("Şifremi Unuttum", "ForgotPassword", "User")
+
     </div>
 </form>
                         </div>

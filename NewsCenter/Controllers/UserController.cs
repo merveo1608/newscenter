@@ -7,6 +7,7 @@ using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
 using Project.COMMON.Tools;
 using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
+using System.Security.Claims;
 
 namespace NewsCenter.Controllers
 {
@@ -14,7 +15,6 @@ namespace NewsCenter.Controllers
     {
         readonly UserManager<AppUser> _userManager;
         readonly SignInManager<AppUser> _signInManager;
-
 
         public UserController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
@@ -246,16 +246,91 @@ namespace NewsCenter.Controllers
             return RedirectToAction("SignIn", "User");
         }
 
-        public IActionResult Profile()
+        public async Task<IActionResult> Profile()
         {
-            return View();
-     
+            // Oturum açmış kullanıcının ID'sini al
+            var userId = _userManager.GetUserId(User);
+
+            // Oturum açmış kullanıcının bilgilerini al
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Kullanıcı bilgilerini view'a gönder
+            return View(user);
+
         }
 
         [HttpPost]
-        public async Task<IActionResult> Profile(AppUserProfile up )
+        public async Task<IActionResult> Profile(AppUser updatedUser)
+        { // Oturum açmış kullanıcının ID'sini al
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Kullanıcı profil bilgilerini güncelle
+            user.FirstName = updatedUser.FirstName;
+            user.LastName = updatedUser.LastName;
+            user.Address = updatedUser.Address;
+            user.Email = updatedUser.Email; // E-posta gibi diğer alanlar
+
+            // Kullanıcı bilgilerini güncelle ve sonucu kontrol et
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+            {
+                // Güncelleme başarılı
+                return RedirectToAction("Profile", new { message = "Profile updated successfully." });
+            }
+            else
+            {
+                // Hataları model state'e ekle
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+            // Güncelleme başarısızsa, formu yeniden göster
+            return View(user);
+        }
+
+        public IActionResult ForgotPassword()
         {
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                {
+                    // Kullanıcı yoksa veya email doğrulanmamışsa, aynı sayfaya döndür
+                    return View("ForgotPassword");
+                }
+
+                // Şifre sıfırlama token'ı oluşturma
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var resetLink = Url.Action("ResetPassword", "User",
+                                new { token = token, email = model.Email }, Request.Scheme);
+
+                // Şifre sıfırlama linkini email ile gönderme
+                //await _emailSender.SendEmailAsync(model.Email, "Şifre Sıfırlama",
+                    //$"Şifrenizi sıfırlamak için lütfen <a href='{resetLink}'>buraya tıklayın</a>.");
+
+                return View("ForgotPasswordConfirmation");
+            }
+
+            // Model hatalıysa aynı sayfayı tekrar göster
+            return View(model);
+        }
     }
+
 }

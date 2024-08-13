@@ -18,11 +18,12 @@ namespace NewsCenter.Areas.Admin.Controllers
     {
         INewsManager _newsManager;
         ICategoryManager _categoryManager;
-
-        public NewsController(ICategoryManager categoryManager, INewsManager newsManager)
+        UserManager<AppUser> _userManager;
+        public NewsController(ICategoryManager categoryManager, INewsManager newsManager, UserManager<AppUser> userManager)
         {
             _categoryManager = categoryManager;
             _newsManager = newsManager;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -62,7 +63,8 @@ namespace NewsCenter.Areas.Admin.Controllers
             }
             #endregion
 
-            news.AppUserID = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Kullanıcı ID'si
+            //news.AppUserID = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Kullanıcı ID'si
+            news.AppUserID =Convert.ToInt32(_userManager.GetUserId(User));
             await _newsManager.AddAsync(news);
             return RedirectToAction("Index");
         }
