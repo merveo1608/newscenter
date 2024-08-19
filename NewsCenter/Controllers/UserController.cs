@@ -327,27 +327,33 @@ namespace NewsCenter.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
+                //usermanager ile veritabanına git ve modeldeki emaile ait kullanıcı bilgisini user nesnesine ata.
+                AppUser user = await _userManager.FindByEmailAsync(model.Email);
                 if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
                 {
+                    TempData["Message"] = "Email adresiniz geçersiz, geçerli bir Email adresi giriniz";
+
                     // Kullanıcı yoksa veya email doğrulanmamışsa, aynı sayfaya döndür
                     return View("ForgotPassword");
                 }
 
-                // Şifre sıfırlama token'ı oluşturma
-                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var resetLink = Url.Action("ResetPassword", "User",
-                                new { token = token, email = model.Email }, Request.Scheme);
+                #region şifremi unuttum maili gönder
+                string body = $"Şifrenizi güncellemek için linke tıklayınız http://localhost:5089/User/PasswordUpdate?email={user.Email} ";
+                MailService.Send(model.Email, body: body, subject: "News Center Şifre Güncelleme");
 
-                // Şifre sıfırlama linkini email ile gönderme
-                //await _emailSender.SendEmailAsync(model.Email, "Şifre Sıfırlama",
-                    //$"Şifrenizi sıfırlamak için lütfen <a href='{resetLink}'>buraya tıklayın</a>.");
+                TempData["Message"] = "Emailinizi kontrol ediniz,Şifrenizi güncellemek için, gelen maildeki linke tıklayın!";
+                #endregion
 
-                return View("ForgotPasswordConfirmation");
+                return View("ForgotPassword");
             }
 
             // Model hatalıysa aynı sayfayı tekrar göster
             return View(model);
+        }
+
+        public IActionResult PasswordUpdate()
+        {
+            return View();
         }
     }
 
