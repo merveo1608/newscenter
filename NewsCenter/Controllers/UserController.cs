@@ -351,10 +351,25 @@ namespace NewsCenter.Controllers
             return View(model);
         }
 
-        public IActionResult PasswordUpdate()
+        public IActionResult PasswordUpdate(string email )
         {
-            return View();
+            PasswordUpdateModel model = new PasswordUpdateModel();
+            model.Email = email;
+            return View(model);
         }
-    }
+
+
+        [HttpPost]
+        public IActionResult PasswordUpdate(PasswordUpdateModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Şifre güncelleme işlemlerini burada yapabilirsiniz
+                TempData["Message"] = "Şifreniz başarıyla güncellendi.";
+                return RedirectToAction("PasswordUpdate");
+            }
+            return View(model);
+        }
+}
 
 }
