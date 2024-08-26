@@ -368,7 +368,7 @@ namespace NewsCenter.Controllers
                 TempData["Message"] = "Şifreniz başarıyla güncellendi.";
                 return RedirectToAction("PasswordUpdate");
             }
-            return View(model);
+            return View();
         }
 }
 

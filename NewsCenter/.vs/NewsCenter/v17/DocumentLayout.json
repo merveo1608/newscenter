@@ -15,10 +15,6 @@
       "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:models\\appusers\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\models\\appusers\\passwordupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:models\\appusers\\passwordupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\views\\user\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:views\\user\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -40,22 +36,9 @@
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAGEBAAAAAAAAAAAiwGkBAAASAAAA",
+              "ViewState": "AQIAAKgAAADQ/////98wwO0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T12:27:09.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PasswordUpdateModel.cs",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Models\\AppUsers\\PasswordUpdateModel.cs",
-              "RelativeDocumentMoniker": "Models\\AppUsers\\PasswordUpdateModel.cs",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Models\\AppUsers\\PasswordUpdateModel.cs",
-              "RelativeToolTip": "Models\\AppUsers\\PasswordUpdateModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T12:13:18.961Z",
               "EditorCaption": ""
             },
             {
@@ -73,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Views\\User\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\ForgotPassword.cshtml",
@@ -81,8 +64,7 @@
               "RelativeToolTip": "Views\\User\\ForgotPassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-19T12:12:29.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T12:12:29.717Z"
             },
             {
               "$type": "Document",
@@ -94,8 +76,7 @@
               "RelativeToolTip": "Models\\AppUsers\\ForgotPasswordViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T12:12:19.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T12:12:19.519Z"
             }
           ]
         }
