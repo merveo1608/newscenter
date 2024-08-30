@@ -360,12 +360,41 @@ namespace NewsCenter.Controllers
 
 
         [HttpPost]
-        public IActionResult PasswordUpdate(PasswordUpdateModel model)
+        public async Task<IActionResult> PasswordUpdate(PasswordUpdateModel model)
         {
+            //ekrandan gelen emaile ait kullanıcıyı veritabanından bulma kodu.
+            AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
+
+            //ekrandan girilen kullanıcı şifresini veritabanına kaydederken hashlemek için bu nesneyi kullandım
+            PasswordHasher<AppUser> passwordHasher = new PasswordHasher<AppUser>();
             if (ModelState.IsValid)
             {
-                // Şifre güncelleme işlemlerini burada yapabilirsiniz
-                TempData["Message"] = "Şifreniz başarıyla güncellendi.";
+                if (model.Password != model.PasswordConfirm)
+                {
+                    TempData["Message"] = "Girilen şifreler aynı değil";
+
+                }
+                else if(model.Password.Length < 5)
+                {
+                    TempData["Message"] = "Girilen şifre en az 5 karakter olmalıdır";
+
+                }
+                else
+                {
+                    //Hashleme işlemi yapıldı
+                    appUser.PasswordHash = passwordHasher.HashPassword(null, model.Password);
+
+                    // Kullanıcı bilgilerini güncelleme
+                    await _userManager.UpdateAsync(appUser);
+
+
+                    // Kullanıcıyı oturum açmış gibi işaretleme
+                    await _signInManager.SignInAsync(appUser, isPersistent: false);
+
+                    // Şifre güncelleme işlemlerini burada yapabilirsiniz
+                    TempData["Message"] = "Şifreniz başarıyla güncellendi.";
+                }
+             
                 return RedirectToAction("PasswordUpdate");
             }
             return View();
