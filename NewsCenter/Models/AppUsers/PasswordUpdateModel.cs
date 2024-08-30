@@ -7,11 +7,14 @@ namespace NewsCenter.Models.AppUsers
 
         public string Email { get; set; }
 
-        [Required] //zorunluluk
+        
+        [Required(ErrorMessage = "Şifre zorunludur")]
+
         [MinLength(5, ErrorMessage = "Şifre en az 5 karakter olmalıdır.")]
         public string Password { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Şifre tekrarı zorunludur")]
+
         [Compare("Password", ErrorMessage = "Şifreler eşleşmiyor.")]
         public string PasswordConfirm { get; set; }
 

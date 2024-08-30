@@ -369,18 +369,7 @@ namespace NewsCenter.Controllers
             PasswordHasher<AppUser> passwordHasher = new PasswordHasher<AppUser>();
             if (ModelState.IsValid)
             {
-                if (model.Password != model.PasswordConfirm)
-                {
-                    TempData["Message"] = "Girilen şifreler aynı değil";
-
-                }
-                else if(model.Password.Length < 5)
-                {
-                    TempData["Message"] = "Girilen şifre en az 5 karakter olmalıdır";
-
-                }
-                else
-                {
+               
                     //Hashleme işlemi yapıldı
                     appUser.PasswordHash = passwordHasher.HashPassword(null, model.Password);
 
@@ -393,11 +382,14 @@ namespace NewsCenter.Controllers
 
                     // Şifre güncelleme işlemlerini burada yapabilirsiniz
                     TempData["Message"] = "Şifreniz başarıyla güncellendi.";
-                }
-             
-                return RedirectToAction("PasswordUpdate");
+                
+
+                return RedirectToAction("Index", "Home");
+
             }
-            return View();
+
+
+            return View(model);
         }
 }
 
