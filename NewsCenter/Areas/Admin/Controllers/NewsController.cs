@@ -30,7 +30,7 @@ namespace NewsCenter.Areas.Admin.Controllers
         {
             ViewBag.activeMenu = "News";
 
-            return View(_newsManager.GetAll());
+            return View(_newsManager.GetAll().OrderByDescending(a => a.ID).ToList());
         }
 
         public IActionResult CreateNews()
@@ -122,7 +122,7 @@ namespace NewsCenter.Areas.Admin.Controllers
 
             string oldImageURL = model.ImageURL;
 
-            model.AppUserID = 1;
+            model.AppUserID = Convert.ToInt32(_userManager.GetUserId(User));
 
             #region Resim Yükleme Kodları
             if (formFile != null)

@@ -24,9 +24,10 @@ namespace NewsCenter.Controllers
         public IActionResult Index(int categoryID)
         {
             DateTime cutoffDate = new DateTime(2024, 1, 1);
-            List<News> archiveNews= _newsManager.Where(x => x.PublishDate < cutoffDate && x.PublishDate !=null).ToList();
+            List<News> archiveNews= _newsManager.Where(x => x.PublishDate < cutoffDate && x.PublishDate !=null && x.Active == true).ToList();
             ViewBag.archiveNews = archiveNews;
-            List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted).ToList();
+
+            List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted && x.Active == true ).ToList();
 
             if(categoryID !=0)
             {

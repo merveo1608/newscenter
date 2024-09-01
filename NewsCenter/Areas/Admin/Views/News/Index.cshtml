@@ -16,6 +16,7 @@
                 <thead>
                     <tr>
                         <th>Haber ID</th>
+                        <th>Aktif </th>
                         <th >Resim</th>
                         <th>Haber Kategorisi</th>
                         <th>Haber Başlığı</th>
@@ -31,9 +32,12 @@
                     @foreach (News item in Model)
                     {
 
-                        <tr class="gradeX">
+                        <tr  class="@(item.Active ? "" : "opacity-25")">
 
                             <td>@item.ID</td>
+
+                            <td>@(item.Active ? "Evet" : "Hayır")</td>
+
 
                             <td >
                                 <a href="@Url.Action("Index", "NewsDetail",new{area="",id = @item.ID})" target="_blank">

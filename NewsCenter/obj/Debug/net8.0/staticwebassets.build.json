@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nvigZPbBaKA6wv/UCqTx6FiPTEQn2JyeTLdj39OK6TE=",
+  "Hash": "doJ72E5SfpNHGzZzprZa6molh5uQ2LjDWWK82XtYsvw=",
   "Source": "NewsCenter",
   "BasePath": "_content/NewsCenter",
   "Mode": "Default",
@@ -984,6 +984,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f7c02935-8292-4586-bd0d-aeaeb2378781.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\ffc98b6f-0c66-4f3c-9950-c079b0bc2253.webp",
+      "SourceId": "NewsCenter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\",
+      "BasePath": "_content/NewsCenter",
+      "RelativePath": "images/ffc98b6f-0c66-4f3c-9950-c079b0bc2253.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ffc98b6f-0c66-4f3c-9950-c079b0bc2253.webp"
     },
     {
       "Identity": "C:\\Projects\\newscenter\\NewsCenter\\wwwroot\\images\\fff1a904-e637-4924-b073-74e1c829607c.jpg",

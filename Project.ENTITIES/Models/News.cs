@@ -14,6 +14,7 @@ namespace Project.ENTITIES.Models
         public string Description { get; set; }
         public DateTime PublishDate { get; set; }
         public string ImageURL { get; set; }
+        public bool Active { get; set; }
         public int AppUserID { get; set; }
         public int CategoryID { get; set; }
 

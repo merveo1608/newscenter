@@ -1,8 +1,14 @@
 ﻿@model News
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> UserManager
+
 
 @{
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var user = await UserManager.GetUserAsync(User); // Oturum açmış kullanıcıyı alıyoruz.
+
 }
+
 <form asp-action="UpdateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
 
     <input type="hidden" asp-for="ID" />
@@ -31,17 +37,32 @@
         <label>Aciklama  giriniz</label>
         <textarea asp-for="Description" class="form-control" rows="20"></textarea>
     </div>
-
-   
+     
     <div class="mb-3">
         <img src="@Model.ImageURL" class="w-25" />
     </div>
+
     <div class="mb-3">
         <label>Resim seciniz</label>
         <input type="file" name="formFile" class="form-control" />
         <input asp-for="ImageURL" class="form-control" hidden />
-
     </div>
+
+  
+    
+    <div class="mb-3">
+        <label>Aktif</label>
+        @if (user != null && await UserManager.IsInRoleAsync(user, "Admin"))
+        {
+            <input asp-for="Active" type="checkbox" />
+        }
+        else
+        {
+            <input asp-for="Active" type="checkbox" disabled />
+
+        }
+    </div>
+
     @* <div class="mb-3">
         <label>Resim Urlsi girirnix</label>
         <input asp-for="ImageURL" class="form-control" />

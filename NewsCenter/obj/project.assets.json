@@ -8661,6 +8661,7 @@
       "MimeKit >= 4.3.0",
       "Project.BLL >= 1.0.0",
       "Project.COMMON >= 1.0.0",
+      "Project.DAL >= 1.0.0",
       "X.PagedList >= 8.4.7",
       "X.PagedList.Mvc.Core >= 8.4.7"
     ]
@@ -8697,6 +8698,9 @@
             },
             "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj": {
               "projectPath": "C:\\Projects\\newscenter\\Project.COMMON\\Project.COMMON.csproj"
+            },
+            "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj": {
+              "projectPath": "C:\\Projects\\newscenter\\Project.DAL\\Project.DAL.csproj"
             }
           }
         }
