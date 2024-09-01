@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
@@ -9,10 +10,12 @@ namespace NewsCenter.Controllers
     {
         IContactManager _contactManager;
         IAppUserManager _appUserManager;
-        public ContactController(IContactManager contactManager, IAppUserManager appUserManager)
+        readonly UserManager<AppUser> _userManager;
+        public ContactController(IContactManager contactManager, IAppUserManager appUserManager, UserManager<AppUser> userManager)
         {
             _contactManager = contactManager;
             _appUserManager = appUserManager;
+            _userManager = userManager;
 
 
         }
@@ -25,7 +28,10 @@ namespace NewsCenter.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(Contact contact)
         {
-            contact.AppUserID = 1;
+            // Oturum açmış kullanıcının ID'sini al
+            string userId = _userManager.GetUserId(User);
+
+            contact.AppUserID = Convert.ToInt32(userId);
             if (contact.Subject == 0 )
             {
                 TempData["message"] = "Konu seçiniz!";

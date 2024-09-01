@@ -249,10 +249,10 @@ namespace NewsCenter.Controllers
         public async Task<IActionResult> Profile()
         {
             // Oturum açmış kullanıcının ID'sini al
-            var userId = _userManager.GetUserId(User);
+            string userId = _userManager.GetUserId(User);
 
             // Oturum açmış kullanıcının bilgilerini al
-            var user = await _userManager.FindByIdAsync(userId);
+            AppUser user = await _userManager.FindByIdAsync(userId);
 
             if (user == null)
             {
