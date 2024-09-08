@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace Project.COMMON.Tools
 {
+    //mail gönderme işlemi için bir class ve içersinde de tüm ayarlar ve mail gönderme fonksiyonu oluşturuldu.(Hybrid ntier projesinden örnek alındı) Burda yazılan fonksiyonumu projem içersindeki bütün fonksiyonlardan çağırabilirim.
     public static class MailService
     {
-        public static void Send(string receiver, string password = "rwaodeuxordmtedw", string body = "Test mesajıdır", string subject = "Email Testi", string sender = "yzl3169test@gmail.com")
+        public static void Send(string receiver, string password = "piucxefddhfwxtlx", string body = "Test mesajıdır", string subject = "Email Testi", string sender = "infonewscenter19@gmail.com")
         {
             MailAddress senderEmail = new MailAddress(sender);
             MailAddress receiverEmail = new MailAddress(receiver);
 
-            //Bizim Email işlemlerimiz SMTP'ye göre yapılır...
-            //Kullandıgınız gmail hesabının baska uygulamalar tarafından mesaj gönderme özelligini acmalısınız...
-
+          
             SmtpClient smtp = new()
             {
                 Host = "smtp.gmail.com",
@@ -28,10 +27,7 @@ namespace Project.COMMON.Tools
                 Credentials = new NetworkCredential(senderEmail.Address, password)
             };
 
-
-
-            //Birazdan kullanacagımız ifade ozel bir scope acarak bir sublocal olusturup orada da garbage collector'in calısmasını saglamak icin verilecektir...
-
+            //mail message nesnesi using içersinde oluşturldu kullanıldıktan sonra hafızadan otomatik olarak yok olacak.
             using (MailMessage message = new(senderEmail, receiverEmail)
             {
                 Subject = subject,
@@ -40,13 +36,6 @@ namespace Project.COMMON.Tools
             {
                 smtp.Send(message);
             }
-
-
-            //    MailMessage message = new(senderEmail, receiverEmail);
-            //message.Subject = subject;
-            //message.Body = body;
-
-            //smtp.Send(message);
         }
     }
 }

@@ -9,20 +9,20 @@ using Project.ENTITIES.Models;
 namespace NewsCenter.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin,Editor")]
+    [Authorize(Roles = "Admin,Editor")] //yetkilendrme işlemleri 
     public class CategoryController : Controller
     {
         readonly ICategoryManager _categoryManager;
 
+        //constractor bir class oluşturulduğunda otomatik olarak çalışan ilk kod bloğudur
         public CategoryController(ICategoryManager categoryManager)
         {
             _categoryManager = categoryManager;
         }
-        public IActionResult Index()
+        public IActionResult Index() //categorilerin listelendiği sayfadır
         {
-            ViewBag.activeMenu = "Category";
 
-            return View(_categoryManager.GetAll());
+            return View(_categoryManager.GetAll()); 
         }
 
         public IActionResult CreateCategory()
@@ -32,10 +32,11 @@ namespace NewsCenter.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateCategory(Category model)
         {
-            await _categoryManager.AddAsync(model);
+            await _categoryManager.AddAsync(model); //category tablosuna modeldeki category yeni kayıt olarak eklenir.
             return RedirectToAction("Index");
         }
 
+        //silme butonuna tıklandığında buraya request gelir. Requestin urlsnde de silinecek kaydın id si vardır.
         public async Task<IActionResult> DeleteCategory(int id)
         {
             _categoryManager.Delete(await _categoryManager.FindAsync(id));
@@ -65,9 +66,10 @@ namespace NewsCenter.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
+        //listedeki bir kayda güncelle dediğimde açılan bir sayfa
         public async Task<IActionResult> UpdateCategory(int id)
         {
-            return View(await _categoryManager.FindAsync(id));
+            return View(await _categoryManager.FindAsync(id)); //parametredeki id ye ait category verisini bul return et
 
         }
 

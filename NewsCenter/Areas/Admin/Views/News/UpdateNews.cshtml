@@ -1,73 +1,83 @@
-﻿@model News
-@using Microsoft.AspNetCore.Identity
+﻿@model NewsViewModel
 @inject UserManager<AppUser> UserManager
-
-
+@using Microsoft.AspNetCore.Identity
+@using NewsCenter.Models
 @{
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
     var user = await UserManager.GetUserAsync(User); // Oturum açmış kullanıcıyı alıyoruz.
 
 }
 
-<form asp-action="UpdateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <h4 class="text-danger">@TempData["Message"]</h4>
+        </div>
+        <div class="col-12">
+            <form asp-action="UpdateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
 
-    <input type="hidden" asp-for="ID" />
+                <input type="hidden" asp-for="ID" />
+                <input type="hidden" asp-for="AppUserID" />
 
-    <div class="mb-3 d-flex justify-content-end">
-        <button class="btn btn-success ms-1"><i class="fas fa-save"></i> Kaydet</button>
-        <a asp-action="Index" button class="btn btn-primary ms-1"><i class="fas fa-long-arrow-alt-left"></i> Geri</a>
-    </div>
+                <div class="mb-3 d-flex justify-content-end">
+                    <button class="btn btn-success ms-1"><i class="fas fa-save"></i> Kaydet</button>
+                    <a asp-action="Index" button class="btn btn-primary ms-1"><i class="fas fa-long-arrow-alt-left"></i> Geri</a>
+                </div>
 
-    <div class="mb-3">
-        <label>Yayın Tarihi</label>
-        <input asp-for="PublishDate" type="datetime-local" class="form-control" />
-    </div>
+                <div class="mb-3">
+                    <label>Yayın Tarihi</label>
+                    <input asp-for="PublishDate" type="datetime-local" class="form-control" />
+                </div>
 
-    <div class="mb-3">
-        <label>Kategori Seciniz</label>
-        @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.categories, "ID", "CategoryName"), "-", new { @class = "form-control" })
-    </div>
+                <div class="mb-3">
+                    <label>Kategori Seciniz</label>
+                    @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.categories, "ID", "CategoryName"), htmlAttributes: new { @class = "form-control" })
+                </div>
 
-    <div class="mb-3">
-        <label>Haber başlığı giriniz</label>
-        <input asp-for="Header" class="form-control" />
-    </div>
+                <div class="mb-3">
+                    <label>Haber başlığı giriniz</label>
+                    <input asp-for="Header" class="form-control" />
+                </div>
 
-    <div class="mb-3">
-        <label>Aciklama  giriniz</label>
-        <textarea asp-for="Description" class="form-control" rows="20"></textarea>
-    </div>
+                <div class="mb-3">
+                    <label>Aciklama  giriniz</label>
+                    <textarea asp-for="Description" class="form-control" rows="20"></textarea>
+                </div>
      
-    <div class="mb-3">
-        <img src="@Model.ImageURL" class="w-25" />
-    </div>
+                <div class="mb-3">
+                    <img src="@Model.ImageURL" class="w-25" />
+                </div>
 
-    <div class="mb-3">
-        <label>Resim seciniz</label>
-        <input type="file" name="formFile" class="form-control" />
-        <input asp-for="ImageURL" class="form-control" hidden />
-    </div>
+                <div class="mb-3">
+                    <label>Resim seciniz</label>
+                    <input type="file" name="formFile" class="form-control" />
+                    <input asp-for="ImageURL" class="form-control" hidden />
+                </div>
 
   
     
-    <div class="mb-3">
-        <label>Aktif</label>
-        @if (user != null && await UserManager.IsInRoleAsync(user, "Admin"))
-        {
-            <input asp-for="Active" type="checkbox" />
-        }
-        else
-        {
-            <input asp-for="Active" type="checkbox" disabled />
+                <div class="mb-3">
+                    <label>Aktif</label>
+                    @if (user != null && await UserManager.IsInRoleAsync(user, "Admin"))
+                    {
+                        <input asp-for="Active" type="checkbox" />
+                    }
+                    else
+                    {
+                        <input asp-for="Active" type="checkbox" disabled />
 
-        }
-    </div>
+                    }
+                </div>
 
-    @* <div class="mb-3">
-        <label>Resim Urlsi girirnix</label>
-        <input asp-for="ImageURL" class="form-control" />
-    </div> *@
+                @* <div class="mb-3">
+                    <label>Resim Urlsi girirnix</label>
+                    <input asp-for="ImageURL" class="form-control" />
+                </div> *@
 
 
     
-</form>
+            </form>
+        </div>
+    </div>
+</div>

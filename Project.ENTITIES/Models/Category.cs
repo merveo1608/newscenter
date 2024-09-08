@@ -11,7 +11,6 @@ namespace Project.ENTITIES.Models
         public string CategoryName { get; set; }
         public int SortNumber { get; set; }
         public string Description { get; set; }
-        public string? Code { get; set; }
 
         //Relational Properties
         public virtual ICollection<News> News { get; set; }

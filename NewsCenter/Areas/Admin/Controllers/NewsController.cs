@@ -1,14 +1,18 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
 using NewsCenter.Areas.Admin.Models;
+using NewsCenter.Models;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
 using Project.ENTITIES.Models;
 using System.Security.Claims;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace NewsCenter.Areas.Admin.Controllers
 {
@@ -26,52 +30,80 @@ namespace NewsCenter.Areas.Admin.Controllers
             _userManager = userManager;
         }
 
+        
         public IActionResult Index()
         {
-            ViewBag.activeMenu = "News";
-
-            return View(_newsManager.GetAll().OrderByDescending(a => a.ID).ToList());
+            List<News> data = _newsManager.GetAll().OrderByDescending(a => a.ID).ToList();
+            return View(data);
         }
-
-        public IActionResult CreateNews()
+        public async Task<IActionResult> CreateNews()
         {
             List<Category> categories = _categoryManager.GetAll();
+            categories.Insert(0, new Category {ID =0,CategoryName="-"});//select liste varsayılan optionu ekleme
             ViewBag.categories = categories;
 
-            CreateNewsPageVM cnVm = new CreateNewsPageVM()
-            {
-                Categories = _categoryManager.GetActives()
-            };
+            NewsViewModel model = new NewsViewModel();
+            model.AppUserID = Convert.ToInt32(_userManager.GetUserId(User));
+            model.PublishDate = null;
 
-            return View(cnVm);
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateNews(News news, IFormFile formFile)
+        public async Task<IActionResult> CreateNews(NewsViewModel model, IFormFile? selectedImage)
         {
-            #region Resim Yükleme Kodları
-            if(formFile != null)
+            //sayfadaki kategori listesini burada ayarlamak gerekiyor yoksa hata oluşur.
+            List<Category> categories = _categoryManager.GetAll();
+            categories.Insert(0, new Category { ID = 0, CategoryName = "-" });
+            ViewBag.categories = categories;
+
+            if (selectedImage == null && string.IsNullOrEmpty(model.ImageURL))
             {
-                Guid unigueName = Guid.NewGuid();
-
-                string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
-                news.ImageURL = $"/images/{unigueName}{extension}";
-                string path = $"{Directory.GetCurrentDirectory()}/wwwroot{news.ImageURL}";
-
-                FileStream stream = new FileStream(path, FileMode.Create);
-                formFile.CopyTo(stream);
+                ModelState.AddModelError(string.Empty, "Tüm bilgileri giriniz.");
+                return View(model);
             }
-            #endregion
 
-            //news.AppUserID = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Kullanıcı ID'si
-            news.AppUserID =Convert.ToInt32(_userManager.GetUserId(User));
-            await _newsManager.AddAsync(news);
-            return RedirectToAction("Index");
+            //parametredeki modeldeki verilerde herhangi bir sorun yoksa
+            else if (ModelState.IsValid)
+            { 
+                #region Resim Yükleme Kodları
+                if (selectedImage != null)
+                {
+                    Guid unigueName = Guid.NewGuid();
+                    string extension = Path.GetExtension(selectedImage.FileName); //dosyanın uzantısını bu şekilde alırız.
+                    model.ImageURL = $"/images/{unigueName}{extension}";
+                    string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+
+                    FileStream stream = new FileStream(path, FileMode.Create);
+                    selectedImage.CopyTo(stream);
+                }
+                #endregion
+
+                News entity = new News() //veritabanında işlem yapılacak olan entitty classın instancesini alıp  view modeldeki verileri buna aktar
+                {
+                    Header = model.Header,
+                    SortNumber = model.SortNumber,
+                    Description = model.Description,
+                    PublishDate = Convert.ToDateTime(model.PublishDate),
+                    ImageURL = model.ImageURL,
+                    Active = model.Active,
+                    AppUserID = model.AppUserID,
+                    CategoryID = model.CategoryID
+                };
+                await _newsManager.AddAsync(entity); /*veritabanına ekle*/
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                //şartlar sağlanmıyorsa tekrar modeli döndür
+                return View(model);
+            }
         }
 
         public async Task<IActionResult> DeleteNews(int id)
         {
-            _newsManager.Delete(await _newsManager.FindAsync(id));
+            //newsmanagere veritabanından verilen id ye ait haberi bul ve sil görevi verildi
+            _newsManager.Delete(await _newsManager.FindAsync(id)); 
             return RedirectToAction("Index");
         }
         public async Task<IActionResult> DestroyNews(int id)
@@ -81,6 +113,7 @@ namespace NewsCenter.Areas.Admin.Controllers
                 News a = await _newsManager.FindAsync(id);
                 TempData["message"] = _newsManager.Destroy(await _newsManager.FindAsync(id));
 
+                //getcurrentdirectory diyerek projenin dosya adresini aldım.
                 string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{a.ImageURL}";
 
                 if (System.IO.File.Exists(filePath))
@@ -112,45 +145,42 @@ namespace NewsCenter.Areas.Admin.Controllers
         public async Task<IActionResult> UpdateNews(int id)
         {
             List<Category> categories = _categoryManager.GetAll();
+            categories.Insert(0, new Category { ID = 0, CategoryName = "-" });
             ViewBag.categories = categories;
-            return View(await _newsManager.FindAsync(id));
+
+            News news = await _newsManager.FindAsync(id);
+
+            NewsViewModel model = new NewsViewModel() //view modele ana modeldeki bilgileri aktarma işlemi.
+            {
+                ID = news.ID,
+                Header = news.Header,
+                SortNumber = news.SortNumber,
+                Description = news.Description,
+                PublishDate = news.PublishDate,
+                ImageURL = news.ImageURL,
+                Active = news.Active,
+                AppUserID = news.AppUserID,
+                CategoryID = news.CategoryID
+            };
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateNews(News model, IFormFile formFile)
+        public async Task<IActionResult> UpdateNews(NewsViewModel model, IFormFile? selectedImage)
         {
+            List<Category> categories = _categoryManager.GetAll();
+            categories.Insert(0, new Category { ID = 0, CategoryName = "-" });
+            ViewBag.categories = categories;
 
-            string oldImageURL = model.ImageURL;
-
-            model.AppUserID = Convert.ToInt32(_userManager.GetUserId(User));
-
-            #region Resim Yükleme Kodları
-            if (formFile != null)
+            if (selectedImage == null && string.IsNullOrEmpty(model.ImageURL))
             {
-
-
-                Guid unigueName = Guid.NewGuid();
-
-                string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
-                model.ImageURL = $"/images/{unigueName}{extension}";
-                string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
-
-                FileStream stream = new FileStream(path, FileMode.Create);
-                formFile.CopyTo(stream);
+                ModelState.AddModelError(string.Empty, "Tüm bilgileri giriniz.");
+                return View(model);
             }
-            #endregion
-
-            //modeli veritabına kaydet/güncelle
-            await _newsManager.UpdateAsync(model);
-
-            //önceki resmi bul ve sil
-            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{oldImageURL}";
-
-
-            if (formFile != null)   //gözat ile yeni bir resim seçilmişse
+            else if (ModelState.IsValid)
             {
-                //bulduğun eski resmi sil
-
+                //önceki resmi bul ve sil
+                string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
                 if (System.IO.File.Exists(filePath))
                 {
                     //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
@@ -166,9 +196,38 @@ namespace NewsCenter.Areas.Admin.Controllers
 
                     }
                 }
+
+                #region Resim Yükleme Kodları
+                if (selectedImage != null)
+                {
+
+
+                    Guid unigueName = Guid.NewGuid();
+
+                    string extension = Path.GetExtension(selectedImage.FileName); //dosyanın uzantısını bu şekilde alırız.
+                    model.ImageURL = $"/images/{unigueName}{extension}";
+                    string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+
+                    FileStream stream = new FileStream(path, FileMode.Create);
+                    selectedImage.CopyTo(stream);
+                }
+                #endregion
+
+                //modeli veritabına kaydet/güncelle
+                News news = new News()
+                {
+                    ID = model.ID,
+                    Header = model.Header,
+                    SortNumber = model.SortNumber,
+                    Description = model.Description,
+                    PublishDate = Convert.ToDateTime(model.PublishDate),
+                    ImageURL = model.ImageURL,
+                    Active = model.Active,
+                    AppUserID = model.AppUserID,
+                    CategoryID = model.CategoryID
+                };
+                await _newsManager.UpdateAsync(news);
             }
-
-
 
             return RedirectToAction("Index");
         }

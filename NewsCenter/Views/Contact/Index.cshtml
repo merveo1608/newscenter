@@ -3,6 +3,12 @@
 <h4>@TempData["message"]</h4>
 <div class="card w-50 mb-3">
     <div class="card-body">
+        @if (Model.AppUserID == null ||  Model.AppUserID ==0)
+        {
+            <div class="alert alert-primary" role="alert">
+                Üye girişi yapmadan iletişim maili gönderemezsiniz.
+            </div>
+        }
         <form asp-controller="Contact" asp-action="Index" method="post" class="p-3 w-75 m-auto">
           @*   <div class="mb-3">
                 <label class="form-label fw-bold">AD SOYAD</label>
@@ -26,7 +32,7 @@
 
             <div class="mb-3">
                 <label class="form-label fw-bold">MESAJ</label>
-                <textarea asp-for="Description" class="form-control" rows="5" placeholder="Meajınızı giriniz"> </textarea>
+                <textarea asp-for="Description" class="form-control" rows="5" placeholder="Mesajınızı giriniz"> </textarea>
             </div>
             @if (!ViewData.ModelState.IsValid)
             {

@@ -16,12 +16,12 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDistributedMemoryCache(); //Eger Session kompleks yapýlarla calýsmak icin Extension metodu eklenme durumuna maruz kalmýssa bu kod projenizin saglýklý calýsmasý icin gereklidir...
 
-builder.Services.AddSession(x =>
-{
-    x.IdleTimeout = TimeSpan.FromMinutes(5); //Projeyi kiþinin bos durma süresi eger 1 dakikalýk bir bos durma süresi olursa Session bosa cýksýn...
-    x.Cookie.HttpOnly = true; //document.cookie'den ilgili bilginin gözlemlenmesi
-    x.Cookie.IsEssential = true;
-});
+//builder.Services.AddSession(x =>
+//{
+//    x.IdleTimeout = TimeSpan.FromMinutes(5); //Projeyi kiþinin bos durma süresi eger 1 dakikalýk bir bos durma süresi olursa Session bosa cýksýn...
+//    x.Cookie.HttpOnly = true; //document.cookie'den ilgili bilginin gözlemlenmesi
+//    x.Cookie.IsEssential = true;
+//});
 
 // Configure authentication and authorization
 builder.Services.ConfigureApplicationCookie(options =>
@@ -43,14 +43,13 @@ builder.Services.AddHttpContextAccessor();
 
 
 
-builder.Services.AddControllersWithViews()
-        .AddJsonOptions(options =>
-        {
-            options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-        });
+//builder.Services.AddControllersWithViews()
+//        .AddJsonOptions(options =>
+//        {
+//            options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+//        });
 
 builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSettings"));
-
 builder.Services.AddTransient<IEmailService, EmailService>();
 WebApplication app = builder.Build();
 
@@ -64,7 +63,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseSession();
+//app.UseSession();
 
 app.UseAuthentication();
 

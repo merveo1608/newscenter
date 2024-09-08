@@ -32,6 +32,7 @@ namespace NewsCenter.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserRegisterModel r)
         {
+            //yeni bir appuser nesnesi oluşturuyorum(view modeldeki verileri appuser nesnesine aktaracğım.)
             AppUser u = new AppUser();
             if (r.Email != null)
             {
@@ -41,7 +42,6 @@ namespace NewsCenter.Controllers
                 u = await _userManager.FindByEmailAsync(r.Email);
 
             }
-
             if (u != null)
             {
                 ModelState.AddModelError(string.Empty, "Bu email zaten kayıtlı başka email kullanınız!");
@@ -53,23 +53,22 @@ namespace NewsCenter.Controllers
                 ModelState.AddModelError(string.Empty, "Şifreleriniz aynı değil kontrol ediniz!");
 
             }
-
             //Hiçbir sorun yoksa veritabanına kaydet
             else
             {
-                PasswordHasher<AppUser> passwordHasher = new PasswordHasher<AppUser>(); //IdentityFrameworkten gelir.Şifrelerin hashlenmesi ve doğrulanması için kullanılır.
+                PasswordHasher<AppUser> passwordHasher = new PasswordHasher<AppUser>(); //IdentityFrameworkten gelir.Şifrelerin hashlenmesi ve doğrulanması için kullanılır.(chatgpt)
 
+                //parametredeki viewmodeldeki verileri appuser nesnesine aktardım.
                 AppUser user = new()
                 {
-                    //Id = 1,
                     UserName = r.FirstName,
                     Email = r.Email,
                     NormalizedEmail = r.Email.ToUpper(),
                     NormalizedUserName = r.FirstName.ToUpper(),
-                    EmailConfirmed = true,
+                    EmailConfirmed = false,
                     SecurityStamp = Guid.NewGuid().ToString(),
-                    PasswordHash = passwordHasher.HashPassword(null, r.Password),
-                    Profile = new AppUserProfile { FirstName = r.FirstName, LastName = r.LastName },
+                    PasswordHash = passwordHasher.HashPassword(null, r.Password), //şifreyi şifrelemek
+                    Profile = new AppUserProfile { FirstName = r.FirstName, LastName = r.LastName }, //kullanıcının profil kaydınıda oluşturmuş oluyoruz
                 };
 
                 //yeni kullanıcı oluştur ve kaydet
@@ -78,16 +77,16 @@ namespace NewsCenter.Controllers
                 //kayıt işlemi başarılıysa
                 if (result.Succeeded)
                 {
-                    //kullanıcı profilini oluştur
-
-
-                    // rol ata ve kaydet
-                    await _userManager.AddToRoleAsync(user, "Visitor");
+                     
+                    //kullanıcı profilini oluştur. Rol ata ve kaydet
+                    await _userManager.AddToRoleAsync(user, "Visitor"); //kullanıcı rolü bütün kayıtlarda visitor olarak atanır. değiştirilmek istendiği takdirde appuserrole tablosundan veritabanı üzerinden düzenlenebilir.
 
                     //kullanıcı oturum açmış olarak ayarla (singınmanager ıdentitty içinde var.)
                     AppUser appUser = await _userManager.FindByEmailAsync(user.Email);
 
                     #region sessiona veri kaydetme kodları
+                    //sessionu projemin sürdürelebilir olması açısından yazdım büyük kapsamlı bir proje olmadığı için şuanda kullanma gereği duymuyorum. her istek geldiğinde veritabanından kullanıcı bilgilerine ulaşmamın şuan için performansıma bir etkisi yok.
+
                     // Kullanıcı girişi başarılı olduysa AppUser nesnesini Session'a kaydet
                     //string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
                     //{
@@ -102,10 +101,6 @@ namespace NewsCenter.Controllers
 
                     TempData["Message"] = "Kayıt işlemi başarılı, Emailinizi kontrol ediniz,Kayıt işleminizi tamamlamak için, gelen maildeki linke tıklayın!";
                     #endregion
-
-    
-
-
                 }
                 else
                 {
@@ -117,6 +112,7 @@ namespace NewsCenter.Controllers
 
 
             return View(r);
+            #region kullanıcı kayıt ve profiil oluşturma kodları.Refoctor edildi.
             //AppUser appUser = new()
             //{
             //    UserName = r.UserName,
@@ -141,7 +137,7 @@ namespace NewsCenter.Controllers
             //    return RedirectToAction("Register");
 
             //}
-
+            #endregion
 
         }
 
@@ -163,6 +159,7 @@ namespace NewsCenter.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        //oturum açma sayfasının var olmasını sağlıyor. Http gettir.
         public IActionResult SignIn()
         {
             return View();
@@ -171,18 +168,22 @@ namespace NewsCenter.Controllers
         [HttpPost]
         public async Task<IActionResult> SignIn(LoginViewModel model)
         {
-
+            //parametredeki modeldeki verilerde herhangi bir sorun yoksa
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
+                //kullanıcının tüm bilgilerini email ile bul ve appUser nesnesine ata
+                AppUser user = await _userManager.FindByEmailAsync(model.Email);
 
                 //emaile ait bir kullanıcı yoksa
                 if (user == null)
                 {
                     ModelState.AddModelError(string.Empty, "Giriş Bilgieriniz Hatalı, Kontrol Ediniz !");
-                }else
+                }
+                else
                 {
-                 var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, model.RememberMe, false);
+                    //signınmanger üzerinden kullanıcının şifresinin doğru olup olmadığını kontrol ettim.
+                 var passwordCheck = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, false, false);
+
                     if (user.EmailConfirmed != true)
                     {
                         //mail gönderme kodları
@@ -196,40 +197,26 @@ namespace NewsCenter.Controllers
                         ModelState.AddModelError(string.Empty, "Emailiniz onaylanmamış, onaylama maili tekrar gönderilmiştir mail kutunuzu kontrol ediniz");
 
                     }
-                    else if(result.Succeeded != true)
+                    else if(passwordCheck.Succeeded != true)
                     {
                         ModelState.AddModelError(string.Empty, "Giriş Bilgieriniz Hatalı, Kontrol Ediniz !");
 
                     }
-                    else if (result.Succeeded)
-                {
-                    AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
+                    else if (passwordCheck.Succeeded)
+                    {
+                        AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
 
-                    // Kullanıcı girişi başarılı olduysa AppUser nesnesini Session'a kaydet
-                    //string userData = JsonConvert.SerializeObject(appUser, Formatting.None, new JsonSerializerSettings()
-                    //{
-                    //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                    //});
-
-                    //HttpContext.Session.SetString("AppUser", userData);
-
-
-                    IList<string> roles = await _userManager.GetRolesAsync(appUser);
-                        //if (roles.Count() > 0)
-                        //{
-                        //    HttpContext.Session.SetString("Roles", string.Join(",", roles));
-
-                        //}
+                        IList<string> roles = await _userManager.GetRolesAsync(appUser);
+                            
                         if (roles.Contains("Visitor"))
-                    {
-                        return RedirectToAction("Index", "Home"); //todo ShoppingTool
+                        {
+                            return RedirectToAction("Index", "Home"); //anasayfaya yönlrndir.
+                        }
+                        else 
+                        {
+                            return RedirectToAction("Index", "Home", new { Area = "Admin" }); //visitör değilse admin yada editördür o zamnda areasımın içersindeki admin panaleime yönlendirilir.
+                        }
                     }
-                    else 
-                    {
-                        //return RedirectToAction("SignIn","User"); //todo ShoppingTool
-                        return RedirectToAction("Index", "Home", new { Area = "Admin" });
-                    }
-                }
                 }
 
             }
@@ -242,7 +229,7 @@ namespace NewsCenter.Controllers
         public async Task<IActionResult> Signout()
         {
             await _signInManager.SignOutAsync();
-            HttpContext.Session.Remove("AppUser");
+            //HttpContext.Session.Remove("AppUser");
             return RedirectToAction("SignIn", "User");
         }
 
@@ -317,6 +304,7 @@ namespace NewsCenter.Controllers
             return View(user);
         }
 
+        //üye şifremi unuttum sayfası
         public IActionResult ForgotPassword()
         {
             return View();
@@ -336,23 +324,29 @@ namespace NewsCenter.Controllers
                     // Kullanıcı yoksa veya email doğrulanmamışsa, aynı sayfaya döndür
                     return View("ForgotPassword");
                 }
+                else
+                {
+                    #region şifremi unuttum maili gönder
+                    string body = $"Şifrenizi güncellemek için linke tıklayınız http://localhost:5089/User/PasswordUpdate?email={user.Email} ";
+                    MailService.Send(model.Email, body: body, subject: "News Center Şifre Güncelleme");
 
-                #region şifremi unuttum maili gönder
-                string body = $"Şifrenizi güncellemek için linke tıklayınız http://localhost:5089/User/PasswordUpdate?email={user.Email} ";
-                MailService.Send(model.Email, body: body, subject: "News Center Şifre Güncelleme");
+                    TempData["Message"] = "Emailinizi kontrol ediniz,Şifrenizi güncellemek için, gelen maildeki linke tıklayın!";
+                    #endregion
 
-                TempData["Message"] = "Emailinizi kontrol ediniz,Şifrenizi güncellemek için, gelen maildeki linke tıklayın!";
-                #endregion
+                    return View("ForgotPassword");
+                }
 
-                return View("ForgotPassword");
             }
 
             // Model hatalıysa aynı sayfayı tekrar göster
             return View(model);
         }
 
+        //üye şifre güncelleme sayfası
         public IActionResult PasswordUpdate(string email )
         {
+            //mailden tıklanan urldeki emailbilgisi paramettre olarak buraya geldi.
+            //sayfa modeline email bilgisi yazıldı, eğer email bilgisi sayfa modeline yazılmasaydı ekrandan email girdirmek gerekecekti.
             PasswordUpdateModel model = new PasswordUpdateModel();
             model.Email = email;
             return View(model);
@@ -373,11 +367,12 @@ namespace NewsCenter.Controllers
                     //Hashleme işlemi yapıldı
                     appUser.PasswordHash = passwordHasher.HashPassword(null, model.Password);
 
-                    // Kullanıcı bilgilerini güncelleme
+
+                    // Kullanıcı bilgilerini güncelle
                     await _userManager.UpdateAsync(appUser);
 
 
-                    // Kullanıcıyı oturum açmış gibi işaretleme
+                    // Kullanıcıyı oturum açmış olarak identitye yaz
                     await _signInManager.SignInAsync(appUser, isPersistent: false);
 
                     // Şifre güncelleme işlemlerini burada yapabilirsiniz

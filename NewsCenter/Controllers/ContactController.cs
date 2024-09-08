@@ -9,52 +9,42 @@ namespace NewsCenter.Controllers
     public class ContactController : Controller
     {
         IContactManager _contactManager;
-        IAppUserManager _appUserManager;
         readonly UserManager<AppUser> _userManager;
-        public ContactController(IContactManager contactManager, IAppUserManager appUserManager, UserManager<AppUser> userManager)
+        public ContactController(IContactManager contactManager, UserManager<AppUser> userManager)
         {
             _contactManager = contactManager;
-            _appUserManager = appUserManager;
             _userManager = userManager;
 
 
         }
         public IActionResult Index()
         {
-            TempData["message"] = "";
-
-            return View();
+            Contact model = new Contact();  
+            model.AppUserID = Convert.ToInt32(_userManager.GetUserId(User));
+            return View(model);
         }
         [HttpPost]
-        public async Task<IActionResult> Index(Contact contact)
+        public async Task<IActionResult> Index(Contact model)
         {
-            // Oturum açmış kullanıcının ID'sini al
-            string userId = _userManager.GetUserId(User);
+            if (model.AppUserID == null || model.AppUserID ==0)
+            {
+                //TempData["message"] = "Kullanıcı girişi yapmadan iletişim formunu gönderemezsiniz!";
+                return RedirectToAction("SignIn", "User");
 
-            contact.AppUserID = Convert.ToInt32(userId);
-            if (contact.Subject == 0 )
+            }
+            else if (model.Subject == 0 ) //selectoptions kullanıldı seçilen konu türü boşsa
             {
                 TempData["message"] = "Konu seçiniz!";
                 return RedirectToAction("Index");
-
             }
-            else if (string.IsNullOrEmpty(contact.Description))
+            else if (string.IsNullOrEmpty(model.Description)) //açıklama bilgisi boşsa veya nuulsa 
             {
-
                 TempData["message"] = "Mesaj içeriğini boş bırakamazsınız!";
                 return RedirectToAction("Index");
             }
-            //contact.AppUser = _appUserManager.Where(x => x.ID == 1).FirstOrDefault();
-            //if (!ModelState.IsValid)
-            //{
-            //    // Zorunlu alanlar girilmemişse uyarı ekleyin
-            //    return View(contact);
-
-            //}
-            await _contactManager.AddAsync(contact);
+            await _contactManager.AddAsync(model); //gelen modeldeki verileri veritabanına kaydet
             TempData["message"] = "Mesajınız iletilmiştir";
             return RedirectToAction("Index");
-
         }
     }
 }

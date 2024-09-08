@@ -13,7 +13,6 @@ namespace NewsCenter.Areas.Admin.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            ViewBag.activeMenu = "Home";
             return View();
         }
     }

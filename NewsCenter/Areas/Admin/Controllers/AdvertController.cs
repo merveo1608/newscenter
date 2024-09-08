@@ -21,13 +21,12 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
 
 
-        public IActionResult Index()
+        public IActionResult Index() 
         {
-            ViewBag.activeMenu = "Advert";
-
             return View(_advertManager.GetAll());
         }
 
+        //reklam eklemek için gerekli sayfa açılır.
         public IActionResult CreateAdvert()
         {
             return View();
@@ -36,75 +35,69 @@ namespace NewsCenter.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAdvert(Advert advert, IFormFile formFile)
         {
+            //1.adımda reklamın resmini sisteme yükle 
             #region Resim Yükleme Kodları
 
-            Guid unigueName = Guid.NewGuid();
+            Guid unigueName = Guid.NewGuid(); //guid yüklenen dosyanın benzersiz olmasını sağlar
 
-            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
-            advert.ImageURL = $"/images/{unigueName}{extension}";
-            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{advert.ImageURL}";
+            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde aldım.ör:bmp,jpg,jpeg
+            advert.ImageURL = $"/images/{unigueName}{extension}"; //oluşturulsn guidle dosyanın uzantısı birleştirilir ve ımageurl ye atanır.
+            string path = $"{Directory.GetCurrentDirectory()}/wwwroot{advert.ImageURL}"; //bu metodu kullanarakta dosyanın fiziksel olarak kaydedileceği tam yolu beliriz.
 
+            //parametredeki resim dosyasını path değişkenindeki adrese koyar
             FileStream stream = new FileStream(path, FileMode.Create);
             formFile.CopyTo(stream);
             #endregion
 
-            await _advertManager.AddAsync(advert);
+            await _advertManager.AddAsync(advert); //2.adım reklamı veritabanına resim urlsi ile birlikte advertmanager kullanarak kaydet.
             return RedirectToAction("Index");
         }
 
 
         public async Task<IActionResult> UpdateAdvert(int id)
         {
-            return View(await _advertManager.FindAsync(id));
+            //reklam güncelleme sayfası açılırken sayfanın modelini gönderiyorum
+            Advert model = await _advertManager.FindAsync(id);
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateAdvert(Advert model, IFormFile formFile)
+        public async Task<IActionResult> UpdateAdvert(Advert model, IFormFile selectedImage)
         {
-            string oldImageURL = model.ImageURL;
+            //önceki resmi bul ve sil,getcurrentdirectory diyerek projenin dosya adresini aldım.
+            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
+            if (System.IO.File.Exists(filePath)) //sistem io file kütüphanesini kullanarak verilen dosya adresinde bir dosya olup olmadığını kontrol etim
+            {
+                //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
+                //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
+                try
+                {
+                    System.GC.Collect();//garbage collectoru çalıştır
+                    System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
+                    System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
+                }
+                catch (Exception e)
+                {
+
+                }
+            }
+
             #region Resim Yükleme Kodları
 
-            if (formFile != null)
+            if (selectedImage != null) 
             {
                 Guid unigueName = Guid.NewGuid();//özel bir isim oluşjturyor benzersiz
 
-                string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde alırız.
+                string extension = Path.GetExtension(selectedImage.FileName); //dosyanın uzantısını bu şekilde alırız.
                 model.ImageURL = $"/images/{unigueName}{extension}";
                 string path = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
 
                 FileStream stream = new FileStream(path, FileMode.Create);
-                formFile.CopyTo(stream);
+                selectedImage.CopyTo(stream);
             }
             #endregion
             //reklamı veritabanına güncelle
             await _advertManager.UpdateAsync(model);
-
-            //önceki resmi bul ve sil
-            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{oldImageURL}";
-            
-           
-            if (formFile != null)   //gözat ile yeni bir resim seçilmişse
-            {
-                //bulduğun eski resmi sil
-
-                if (System.IO.File.Exists(filePath))
-                {
-                    //tekrar tekrar resim güncellemek istediğimde resim başka bir işlem tarafından kullanılmaktadır yazıyordu
-                    //önceki işlemlerin sonlandırılması gerekiyordu googleda arama yaptım stackowerflowdan aşağıdaki kodları aldım
-                    try
-                    {
-                        System.GC.Collect();//garbage collectoru çalıştır
-                        System.GC.WaitForPendingFinalizers();//daha önceki bitmek üzere olan işler varsa sonlanmasını bekle
-                        System.IO.File.Delete(filePath);//Dosyayı bulunduğu adresten sil
-                    }
-                    catch (Exception e)
-                    {
-
-                    }
-                }
-            }
-
-
             return RedirectToAction("Index");
         }
 
@@ -114,12 +107,17 @@ namespace NewsCenter.Areas.Admin.Controllers
             _advertManager.Delete(await _advertManager.FindAsync(id));
             return RedirectToAction("Index");
         }
+
+        //burada view oluşturmuyoruz var olan butonun veritabanında işlem yapabilmesini sağlıyoruz.
         public async Task<IActionResult> DestroyAdvert(int id)
         {
-            Advert a = await _advertManager.FindAsync(id);
-            TempData["Message"] = _advertManager.Destroy(await _advertManager.FindAsync(id));
+            //veritabanından reklamı silme işlemi
+           Advert model = await _advertManager.FindAsync(id);
+           string msg = _advertManager.Destroy(model);
+            TempData["Message"] = msg;
 
-            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{a.ImageURL}";
+            //silinenn reklama ait olan resmin silinme işlemi
+            string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
 
             if (System.IO.File.Exists(filePath))
             {

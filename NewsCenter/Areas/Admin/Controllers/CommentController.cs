@@ -21,62 +21,48 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Comment> c = _commentManager.GetAll();
+            List<Comment> data = _commentManager.GetAll();
 
-            return View(c);
+            return View(data);
         }
 
+        //yorum onaylama. Viewi yok oluşturulan butonun veritabanında iş yapmasını sağlar
         public async Task<IActionResult> ConfirmComment(int id)
         {
-            Comment c = await _commentManager.FindAsync(id);
-            c.CommentStatus = CommentStatus.Approved;
-            await _commentManager.UpdateAsync(c);
-            TempData["Message"] = "Yorumun onaylandı.";
+            Comment model = await _commentManager.FindAsync(id);
+            model.CommentStatus = CommentStatus.Approved; //bulunan yoruun statüsünü onaylandı ya çek
+            await _commentManager.UpdateAsync(model);
             return RedirectToAction("Index");
         }
 
+        //onayı geri alma 
         public async Task<IActionResult> RevorkComment(int id)
         {
-            Comment c = await _commentManager.FindAsync(id);
+            Comment model = await _commentManager.FindAsync(id);
 
-            if (c == null)
+            if (model == null)
             {
-                // Yorum bulunamazsa, hata mesajı veya yönlendirme yapabilirsiniz
                 return NotFound();
             }
-
-            c.CommentStatus = CommentStatus.PendingApproval; // Onay durumunu geri al
-
-            await _commentManager.UpdateAsync(c);
-
-            // Yorumun onayını geri aldığına dair bir mesaj ekleyerek view'e yönlendirin
-            TempData["Message"] = "Yorumun onayı geri alındı.";
-
+            model.CommentStatus = CommentStatus.PendingApproval; // Onay bekliyora geri al
+            await _commentManager.UpdateAsync(model);
             return RedirectToAction("Index");
         }
 
+        //yorumu reddet
         public async Task<IActionResult> RejectComment(int id)
         {
-            Comment c = await _commentManager.FindAsync(id);
+            Comment model = await _commentManager.FindAsync(id);
 
-            if (c == null)
+            if (model == null)
             {
-                // Yorum bulunamazsa, hata mesajı veya yönlendirme yapabilirsiniz
                 return NotFound();
             }
-
-            c.CommentStatus = CommentStatus.Rejected; // Yorumu reddet
-
-            await _commentManager.UpdateAsync(c);
-
-            // Yorumun reddedildiğine dair bir mesaj ekleyerek view'e yönlendirin
-            TempData["Message"] = "Yorum reddedildi.";
-
+            model.CommentStatus = CommentStatus.Rejected; // Yorumu rejected(reddedildi) olarak ayarla
+            await _commentManager.UpdateAsync(model);
             return RedirectToAction("Index");
         }
-
-
-
+        //yorumu sil
         public async Task<IActionResult> DeleteComment(int id)
         {
             _commentManager.Delete(await _commentManager.FindAsync(id));
@@ -84,14 +70,11 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public async Task<IActionResult> DestroyComment(int id)
         {
-
             try
             {
                 TempData["Message"] = _commentManager.Destroy(await _commentManager.FindAsync(id));
 
             }
-
-            
             catch (Exception ex)
             {
                 // Diğer tüm hatalar için genel bir yakalama bloğu
