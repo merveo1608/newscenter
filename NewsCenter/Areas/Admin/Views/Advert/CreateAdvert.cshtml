@@ -4,7 +4,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<form asp-action="CreateAdvert" asp-controller="Advert" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data"> @*form post olurken 1. parametre olarak sayfa modelini, 2. parametre olarak seçilen resmi conrollera gönderir.*@
+<form asp-action="CreateAdvert" asp-controller="Advert" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data"> @*form post olurken 1. parametre olarak sayfa modelini, 2. parametre olarak seçilen resmi controllera gönderir.*@
 
     <div class="mb-3">
         <label>Reklam URL</label>
@@ -14,11 +14,13 @@
 
     <div class="mb-3">
         <label>Resim seciniz</label>
-        <input type="file" name="formFile" class="form-control" />
+        <input type="file" name="selectedImage" class="form-control" />
     </div>
 
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
         <a asp-action="Index" button class="btn btn-primary">Geri</a>
 
     </div>

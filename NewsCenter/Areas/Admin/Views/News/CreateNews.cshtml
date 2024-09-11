@@ -14,7 +14,7 @@
             </div>
             <div class="col-12">
                <form asp-action="CreateNews" asp-controller="News" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
-
+                <input type="hidden" asp-for="AppUserID" />
                 <div class="mb-3">
                     <label>Yayın Tarihi</label>
                     <input asp-for="PublishDate" type="datetime-local" class="form-control" />
@@ -42,7 +42,12 @@
 
                 <div class="mb-3">
                     <label>Resim seciniz</label>
-                    <input type="file" name="formFile" class="form-control" />
+                    <input type="file" name="selectedImage" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label > Sıra Numarası </label>
+                        <input asp-for="SortNumber" class="form-control" type="number" />
                 </div>
 
                 <div class="mb-3">

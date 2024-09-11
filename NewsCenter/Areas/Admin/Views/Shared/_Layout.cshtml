@@ -1,17 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUser> SignInManager
-@* @inject UserManager<AppUser> UserManager
-@using Newtonsoft.Json
-@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor *@
+
+@* Admin panelin ana şablonu burasıdır.Bir resmin çerçevesi gibidir. *@
 
 @{
     Layout = null; // Layout belirtilmemiş oluyor
-    // var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
-    // var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
-    // var rolesData = HttpContextAccessor.HttpContext.Session.GetString("Roles");
-    // string name = "merve";
 }
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +31,7 @@
             <a class="navbar-brand text-white fw-bold">Admin Paneli</a>
 
 
-            <form asp-area="" asp-controller="User" asp-action="Signout" method="post">
+            <form asp-controller="User" asp-action="Signout" method="post">
                 @if (SignInManager.IsSignedIn(User))
                 {
                     @Html.ActionLink("Website", "Index", "Home", new { area = "" }, new { @class = "btn btn-dark" })
@@ -56,11 +50,8 @@
                     Çıkış
                 </button>
             </form>
-
-            @* <a type="button" href="/User/Signin" class="btn btn-dark">Çıkış</a> *@
         </div>
     </nav>
-
     <div class="row mt-2">
         <div class="col-2">
             <div class="bg-dark text-white" id="sidebar-wrapper">

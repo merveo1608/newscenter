@@ -6,6 +6,8 @@ using Project.ENTITIES.Models;
 
 namespace NewsCenter.Controllers
 {
+
+    //bu controller web apı yani projeme dışardan erişilebilmesi için oluşturulmuştur
     [Route("api/[controller]")]
     [ApiController]
     public class DataController : ControllerBase

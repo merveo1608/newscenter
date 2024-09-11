@@ -3,7 +3,6 @@
 @{
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-<section class="panel">
     <header class="panel-heading">
         <a class="btn btn-primary" asp-action="CreateAdvert">Yeni</a>
     </header>
@@ -16,7 +15,6 @@
                         <th>Advert ID</th>
                         <th >Resim</th>
                          <th>Website Link</th> 
-                        @* <th >Acıklaması</th> *@
                         <th >Durumu</th>
                         <th >Guncelle</th>
                         <th >Sil</th>
@@ -42,11 +40,11 @@
 
                             <td >@item.Status</td>
 
-                            <td class="center hidden-phone"><a asp-action="UpdateAdvert" asp-route-id="@item.ID" type="button" class="btn btn-warning"> Güncelle </a>   </td>
+                            <td class="center"><a asp-action="UpdateAdvert" asp-route-id="@item.ID" type="button" class="btn btn-warning"> Güncelle </a>   </td>
 
-                            <td class="center hidden-phone">  <a asp-action="DeleteAdvert" asp-route-id="@item.ID" class="btn btn-danger"> Sil </a>   </td>
+                            <td class="center">  <a asp-action="DeleteAdvert" asp-route-id="@item.ID" class="btn btn-danger"> Sil </a>   </td>
 
-                            <td class="center hidden-phone">  <a asp-action="DestroyAdvert" asp-route-id="@item.ID" class="btn btn-success"> Yok Et </a>   </td>
+                            <td class="center">  <a asp-action="DestroyAdvert" asp-route-id="@item.ID" class="btn btn-success"> Yok Et </a>   </td>
 
                         </tr>
                     }

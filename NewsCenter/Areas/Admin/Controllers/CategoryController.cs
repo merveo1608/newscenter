@@ -21,7 +21,7 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public IActionResult Index() //categorilerin listelendiği sayfadır
         {
-
+            ViewBag.activeMenu = "Category";
             return View(_categoryManager.GetAll()); 
         }
 

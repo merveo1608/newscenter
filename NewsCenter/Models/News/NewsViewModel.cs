@@ -18,6 +18,7 @@ namespace NewsCenter.Models
         public bool Active { get; set; }
         public int AppUserID { get; set; }
         [Required(ErrorMessage = "Haber kategorisi zorunludur")]
+        //yeni haber eklerken kategori zorunludur ve değeri sıfırdan büyük olacak
         [PositiveNumber(ErrorMessage = "Haber kategorisi zorunludur")]
         public int CategoryID { get; set; }
 

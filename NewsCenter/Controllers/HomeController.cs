@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Build.Execution;
 using NewsCenter.Models;
 using Project.BLL.ManagerServices.Abstracts;
 using Project.BLL.ManagerServices.Concretes;
@@ -21,14 +22,19 @@ namespace NewsCenter.Controllers
             _advertManager = advertManager;
         }
 
+        //projemde websitemin ana sayfas?d?r
         public IActionResult Index(int categoryID)
         {
-            DateTime cutoffDate = new DateTime(2024, 1, 1);
-            List<News> archiveNews= _newsManager.Where(x => x.PublishDate < cutoffDate && x.PublishDate !=null && x.Active == true).ToList();
+            //burada haberlerimin tarihine göre ae?iv haber olup olmad???n?n ayarlamalar?n? yapt?m
+            DateTime baseDate = new DateTime(2024, 1, 1);
+            List<News> archiveNews= _newsManager.Where(x => x.PublishDate < baseDate && x.PublishDate !=null && x.Active == true).ToList();
             ViewBag.archiveNews = archiveNews;
 
+            //newsmanager ile veritaban?ndan haberlerin stastüsü silinmemi? olanlar? ve active olanlar? listele 
             List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted && x.Active == true ).ToList();
 
+
+            //kategri ?dsine göre haberleri filtreleyip viewbag ile viewa gönderir
             if(categoryID !=0)
             {
                 news = news.Where(x => x.CategoryID == categoryID).ToList();
@@ -37,7 +43,7 @@ namespace NewsCenter.Controllers
             ViewBag.categoryID = categoryID;
 
             ViewBag.news = news;
-
+            //haberler ve reklamlar listelenip viewa gönderdi
             List<Advert> adverts = _advertManager.GetAll();
             ViewBag.adverts = adverts;
             return View(_newsManager.GetAll());

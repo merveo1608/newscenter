@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\newscenter\\NewsCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\controllers\\newsdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:controllers\\newsdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +15,52 @@
       "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\controllers\\categorymenuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:controllers\\categorymenuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\views\\news\\createnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\views\\news\\createnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\views\\news\\updatenews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\views\\news\\updatenews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\views\\category\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\views\\category\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\controllers\\advertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\controllers\\advertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\views\\advert\\updateadvert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\views\\advert\\updateadvert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\views\\advert\\createadvert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\views\\advert\\createadvert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|c:\\projects\\newscenter\\newscenter\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8987B3DD-9E0C-4D3A-944C-8877F933892D}|NewsCenter.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,14 +75,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NewsDetailController.cs",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\NewsDetailController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NewsDetailController.cs",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\NewsDetailController.cs",
-              "RelativeToolTip": "Controllers\\NewsDetailController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAUwBYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T21:03:29.416Z",
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T12:24:06.691Z",
               "EditorCaption": ""
             },
             {
@@ -69,87 +93,100 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwDMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T21:03:23.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Views\\Contact\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Contact\\Index.cshtml",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Views\\Contact\\Index.cshtml",
-              "RelativeToolTip": "Views\\Contact\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-08T20:49:18.831Z",
+              "WhenOpened": "2024-09-11T11:16:05.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T20:21:02.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "Controllers\\ContactController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAADwvyQAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T20:17:47.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryMenuViewComponent.cs",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\CategoryMenuViewComponent.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryMenuViewComponent.cs",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\CategoryMenuViewComponent.cs",
-              "RelativeToolTip": "Controllers\\CategoryMenuViewComponent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAADIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T20:16:29.142Z",
+              "Title": "UpdateNews.cshtml",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\News\\UpdateNews.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\News\\UpdateNews.cshtml",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\News\\UpdateNews.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\News\\UpdateNews.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T11:08:19.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AdvertController.cs",
-              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\AdvertController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AdvertController.cs",
-              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\AdvertController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\AdvertController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAmwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T18:38:17.404Z",
+              "Title": "UpdateAdvert.cshtml",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\Advert\\UpdateAdvert.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Advert\\UpdateAdvert.cshtml",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\Advert\\UpdateAdvert.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Advert\\UpdateAdvert.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T11:08:12.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "CreateAdvert.cshtml",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\Advert\\CreateAdvert.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Advert\\CreateAdvert.cshtml",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\Advert\\CreateAdvert.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Advert\\CreateAdvert.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAlwBAAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T11:07:29.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateNews.cshtml",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\News\\CreateNews.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\News\\CreateNews.cshtml",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\News\\CreateNews.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\News\\CreateNews.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T11:06:15.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "NewsController.cs",
               "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\NewsController.cs",
               "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\NewsController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\NewsController.cs",
-              "ViewState": "AQIAANsAAAAAAAAAAAAYwNoAAAAWAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAjwDkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T12:30:35.188Z",
+              "WhenOpened": "2024-09-11T11:02:08.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdvertController.cs",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\AdvertController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AdvertController.cs",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\AdvertController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AdvertController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAMwEEAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:01:08.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:00:33.27Z",
               "EditorCaption": ""
             },
             {
@@ -160,9 +197,74 @@
               "RelativeDocumentMoniker": "Controllers\\DataController.cs",
               "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\DataController.cs",
               "RelativeToolTip": "Controllers\\DataController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T12:30:35.217Z",
+              "WhenOpened": "2024-09-11T10:48:53.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateCategory.cshtml",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\Category\\UpdateCategory.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\UpdateCategory.cshtml",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Views\\Category\\UpdateCategory.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\UpdateCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T11:11:37.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\CommentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:00:00.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:58:46.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:57:56.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Projects\\newscenter\\NewsCenter\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAANQAAAAAAAAAAAD4v+cAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:48:53.142Z",
               "EditorCaption": ""
             }
           ]

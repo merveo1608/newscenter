@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "Comment";
             List<Comment> data = _commentManager.GetAll();
 
             return View(data);

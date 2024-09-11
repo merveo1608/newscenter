@@ -18,6 +18,7 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "Contact";
             return View(_contactManager.GetAll());
         }
         public async Task<IActionResult> DetailContact(int id)

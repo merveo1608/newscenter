@@ -229,7 +229,6 @@ namespace NewsCenter.Controllers
         public async Task<IActionResult> Signout()
         {
             await _signInManager.SignOutAsync();
-            //HttpContext.Session.Remove("AppUser");
             return RedirectToAction("SignIn", "User");
         }
 

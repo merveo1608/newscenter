@@ -23,6 +23,7 @@ namespace NewsCenter.Areas.Admin.Controllers
 
         public IActionResult Index() 
         {
+            ViewBag.activeMenu = "Advert";
             return View(_advertManager.GetAll());
         }
 
@@ -33,20 +34,20 @@ namespace NewsCenter.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAdvert(Advert advert, IFormFile formFile)
+        public async Task<IActionResult> CreateAdvert(Advert advert, IFormFile selectedImage)
         {
             //1.adımda reklamın resmini sisteme yükle 
             #region Resim Yükleme Kodları
 
             Guid unigueName = Guid.NewGuid(); //guid yüklenen dosyanın benzersiz olmasını sağlar
 
-            string extension = Path.GetExtension(formFile.FileName); //dosyanın uzantısını bu şekilde aldım.ör:bmp,jpg,jpeg
+            string extension = Path.GetExtension(selectedImage.FileName); //dosyanın uzantısını bu şekilde aldım.ör:bmp,jpg,jpeg
             advert.ImageURL = $"/images/{unigueName}{extension}"; //oluşturulsn guidle dosyanın uzantısı birleştirilir ve ımageurl ye atanır.
             string path = $"{Directory.GetCurrentDirectory()}/wwwroot{advert.ImageURL}"; //bu metodu kullanarakta dosyanın fiziksel olarak kaydedileceği tam yolu beliriz.
 
             //parametredeki resim dosyasını path değişkenindeki adrese koyar
             FileStream stream = new FileStream(path, FileMode.Create);
-            formFile.CopyTo(stream);
+            selectedImage.CopyTo(stream);
             #endregion
 
             await _advertManager.AddAsync(advert); //2.adım reklamı veritabanına resim urlsi ile birlikte advertmanager kullanarak kaydet.
@@ -64,7 +65,7 @@ namespace NewsCenter.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateAdvert(Advert model, IFormFile selectedImage)
         {
-            //önceki resmi bul ve sil,getcurrentdirectory diyerek projenin dosya adresini aldım.
+            //önceki resmin dosya adresini belirle
             string filePath = $"{Directory.GetCurrentDirectory()}/wwwroot{model.ImageURL}";
             if (System.IO.File.Exists(filePath)) //sistem io file kütüphanesini kullanarak verilen dosya adresinde bir dosya olup olmadığını kontrol etim
             {

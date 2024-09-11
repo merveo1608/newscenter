@@ -33,6 +33,8 @@ namespace NewsCenter.Areas.Admin.Controllers
         
         public IActionResult Index()
         {
+            ViewBag.activeMenu = "News";
+
             List<News> data = _newsManager.GetAll().OrderByDescending(a => a.ID).ToList();
             return View(data);
         }

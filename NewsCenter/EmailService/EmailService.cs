@@ -27,9 +27,6 @@ namespace NewsCenter.EmailService
             mimeMessage.Body = builder.ToMessageBody();
 
             using  SmtpClient smtp = new SmtpClient();
-            //smtp.ServerCertificateValidationCallback = (sender, certificate, certChainType, errors) => true;
-            //smtp.AuthenticationMechanisms.Remove("XOAUTH2");
-           
             smtp.Connect(_emailSetting.Host,_emailSetting.Port,SecureSocketOptions.StartTls);
             await smtp.AuthenticateAsync(new NetworkCredential(_emailSetting.Email, _emailSetting.Password));
             await smtp.SendAsync(mimeMessage);
