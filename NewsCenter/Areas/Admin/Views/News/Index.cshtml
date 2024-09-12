@@ -20,8 +20,8 @@
                         <th >Resim</th>
                         <th>Haber Kategorisi</th>
                         <th>Haber Başlığı</th>
-                        @* <th >Acıklaması</th> *@
-                        <th >Durumu</th>
+                        <th>Yayın Tarihi</th>
+                        <th>Durumu</th>
                         <th >Guncelle</th>
                         <th >Sil</th>
                         <th >Yok et</th>
@@ -47,15 +47,10 @@
                                 </a>
                             </td>
 
-                            <td>   @item.Category.CategoryName  </td>
-                            <td>   @item.Header  </td>
-
-                            @* <td >@item.Description</td> *@
-
-                            <td>@item.PublishDate </td>
-
+                            <td> @item.Category.CategoryName  </td>
+                            <td> @item.Header  </td>
+                            <td>@item.PublishDate.ToString("dd.MM.yyyy")</td>
                             <td >@item.Status</td>
-
                             <td class="center hidden-phone"><a asp-action="UpdateNews" asp-route-id="@item.ID" type="button" class="btn btn-warning"> Güncelle </a>   </td>
 
                             <td class="center hidden-phone">  <a asp-action="DeleteNews" asp-route-id="@item.ID" class="btn btn-danger"> Sil </a>   </td>

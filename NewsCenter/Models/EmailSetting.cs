@@ -1,5 +1,8 @@
-﻿namespace NewsCenter.Models
+﻿using System.Collections.Specialized;
+
+namespace NewsCenter.Models
 {
+    //email gönderirken kullanılacak bilgileri bu clasın içersinde topladım(Hybrid ntierdan örnek aldım)
     public class EmailSetting
     {
         public string Email { get; set; }

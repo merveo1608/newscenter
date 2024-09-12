@@ -11,6 +11,7 @@ namespace Project.DAL.Extensions
 {
     public static class UserRoleDataSeedExtension
     {
+        //veritabanım ilk kez oluşurken appuser tablosuna dolu gelsin istiyorum
         public static void SeedUsers(ModelBuilder modelBuilder)
         {
             IdentityRole<int> appRole = new()

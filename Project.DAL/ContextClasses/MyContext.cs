@@ -29,7 +29,7 @@ namespace Project.DAL.ContextClasses
             builder.ApplyConfiguration(new CategoryConfiguration());
             builder.ApplyConfiguration(new AdvertConfiguration());
             builder.ApplyConfiguration(new CommentConfiguration());
-            UserRoleDataSeedExtension.SeedUsers(builder);
+            UserRoleDataSeedExtension.SeedUsers(builder); //veritabanı ilk kez oluşturuken olmasını istediğim şeyler
             CategoryDataSeedExtension.SeedCategories(builder);
         }
         public DbSet<AppUser> AppUsers { get; set; }

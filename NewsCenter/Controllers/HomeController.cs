@@ -30,8 +30,8 @@ namespace NewsCenter.Controllers
             List<News> archiveNews= _newsManager.Where(x => x.PublishDate < baseDate && x.PublishDate !=null && x.Active == true).ToList();
             ViewBag.archiveNews = archiveNews;
 
-            //newsmanager ile veritaban?ndan haberlerin stastüsü silinmemi? olanlar? ve active olanlar? listele 
-            List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted && x.Active == true ).ToList();
+            //newsmanager ile veritaban?ndan haberlerin stastüsü silinmemi? olanlar? ve active olanlar? listele ve ?uanki tarihten bir gün önceki
+            List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted && x.Active == true && x.PublishDate > DateTime.Now.AddDays(-1)).ToList();
 
 
             //kategri ?dsine göre haberleri filtreleyip viewbag ile viewa gönderir
@@ -43,27 +43,10 @@ namespace NewsCenter.Controllers
             ViewBag.categoryID = categoryID;
 
             ViewBag.news = news;
-            //haberler ve reklamlar listelenip viewa gönderdi
+            //haberler ve reklamlar listelenip viewa gönderir
             List<Advert> adverts = _advertManager.GetAll();
             ViewBag.adverts = adverts;
             return View(_newsManager.GetAll());
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        public IActionResult GetPartialData()
-        {
-            List<Category> c = _categoryManager.GetAll();
-            return PartialView("_NavbarPartial",c);
         }
     }
 }

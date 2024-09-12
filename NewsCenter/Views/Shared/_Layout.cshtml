@@ -2,18 +2,11 @@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUser> SignInManager
 @inject UserManager<AppUser> UserManager
-@* @inject UserManager<AppUser> UserManager *@
-@* @using Newtonsoft.Json *@
-@* @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor *@
-@{
-    // var userData = HttpContextAccessor.HttpContext.Session.GetString("AppUser");
-    // var user = userData == null ? null : JsonConvert.DeserializeObject<AppUser>(userData);
-}
+@inject UserManager<AppUser> UserManager //userın bilgilerine ulaşmak için
 
-  @inject UserManager<AppUser> UserManager //userın bilgilerine ulaşmak için
-
+    @* websitenin tüm içerik sayfalarının bu sayfa kendi içersinde gösterir bir resmin çerçevesi gibidir *@
 @{
-    var userx = await UserManager.GetUserAsync(User);
+    var userx = await UserManager.GetUserAsync(User); //oturum açmış kullanıcı bilgilerini getir
     var firstName = userx?.Profile.FirstName;
 }
 
@@ -58,22 +51,19 @@
                     </li>
                 </ul>
 
-            @*     @if ( user!= null )
-                {
-                    <span class="text-white"> @user.Profile.FirstName @user.Profile.LastName</span>
-                    //eğer kullanıcı varsa çıkış yap butonu olacak
-                    <a class="btn btn-outline-light ml-2 mr-2 " asp-controller="User" asp-action="SignOut">Çıkış</a>
-                }
-
-                else
-                {
-                    <!-- Üye Giriş Butonu -->
-                    <a class="btn btn-outline-light ml-2 mr-2 " asp-controller="User" asp-action="SignIn">Giriş</a>
-                } *@
-
+                @* oturum açmış kullanıcı varsa *@
                     @if (SignInManager.IsSignedIn(User))
+
+
+
+
+
+
+
+
+
                     {
-                    <form asp-area="" asp-controller="User" asp-action="Signout" method="post">
+                    <form  asp-controller="User" asp-action="Signout" method="post">
                        @{
                             var user = await UserManager.GetUserAsync(User); // Oturum açmış kullanıcıyı alıyoruz.
                             if (user != null && !await UserManager.IsInRoleAsync(user, "Visitor")) // kullanıcı rollerinde visitor diye bir rol yoksa navbarda admin paneline geçiş butonunu göster.
@@ -86,6 +76,7 @@
 
                         <a href="/User/Profile" type="button" class="btn btn-dark">
 
+                            @* bootstrap sitesinden kullanıcı iconu kulalndım *@
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
@@ -116,37 +107,42 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            @* websitedeki diğer tüm alt sayfalar bu kod ile bu sayfaya bağlanır bu alanda gözükür *@
+            @RenderBody() 
         </main>
     </div>
+    @* bu alan websitemin footerıdır. bootstrapdan aldım *@
     <div class="container bg-dark text-white">
         <footer class="mt-5 d-flex justify-content-between">
             <div class="col-md-4">
-                <h5>About Us</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget velit ac quam consequat ultricies.</p>
+                <h5>Hakkımızda</h5>
+                <p>
+                    2024 yılında kurulan News Center AŞ, tarafsız, doğru ve güncel haber anlayışıyla yola çıkan dinamik bir haber platformudur.İleriye dönük hedefimiz, dijital çağın gereksinimlerine uygun, erişilebilir ve yenilikçi bir haber portalı olarak sektörde fark yaratmaktır.
+                </p>
             </div>
             <div class="col-md-4">
-                <h5>Contact</h5>
+                <h5>İletişim</h5>
                 <address>
-                    <p>Email: info@example.com</p>
+                    <p>Email: infonewscenter19@gmail.com</p>
                     <p>Phone: +1 (123) 456-7890</p>
                 </address>
             </div>
             <div class="col-md-4">
-                <h5>Follow Us</h5>
+                <h5>Bizi Takip Edin</h5>
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Facebook</a></li>
-                    <li class="list-inline-item"><a href="#">Twitter</a></li>
-                    <li class="list-inline-item"><a href="#">Instagram</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/">Facebook</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://x.com/">Twitter</a></li>
+                    <li class="list-inline-item"><a target ="_blank" href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
         </footer>
         <div class="row mt-3">
             <div class="col-12 text-center">
-                <p>&copy; 2024 Your Website. All rights reserved.</p>
+                <p>&copy; 2024 News Center. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </div>
+    @* proje oluştuğunda bu kodlar otomatik oluşur varsayılan javascript kodlarını bu sayfaya dahil etmek için *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
