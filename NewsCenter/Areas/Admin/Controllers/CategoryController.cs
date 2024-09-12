@@ -32,8 +32,15 @@ namespace NewsCenter.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateCategory(Category model)
         {
-            await _categoryManager.AddAsync(model); //category tablosuna modeldeki category yeni kayıt olarak eklenir.
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                await _categoryManager.AddAsync(model); //category tablosuna modeldeki category yeni kayıt olarak eklenir.
+                return RedirectToAction("Index");
+            } else
+            {
+                return View(model);
+            }
+
         }
 
         //silme butonuna tıklandığında buraya request gelir. Requestin urlsnde de silinecek kaydın id si vardır.

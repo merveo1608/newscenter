@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.CoreInterfaces
 {
+    //
     public interface IEntity
     {
 

@@ -10,16 +10,7 @@
             </div>
         }
         <form asp-controller="Contact" asp-action="Index" method="post" class="p-3 w-75 m-auto">
-          @*   <div class="mb-3">
-                <label class="form-label fw-bold">AD SOYAD</label>
-                <input asp-for="" class="form-control" placeholder="Adınızı Soyadınızı Giriniz">
-            </div> *@
-
-          @*   <div class="mb-3">
-                <label class="form-label fw-bold">E-POSTA</label>
-                <input asp-for="Email" type="email" class="form-control" placeholder="E-posta adresinizi giriniz">
-            </div>
- *@
+            <input type="hidden" asp-for="AppUserID" /> @* modeldeki mevcut appuserıd null göderiyordu o yüzden ekrana gönderdim  *@
             <div class="mb-3">
                 <label class="form-label fw-bold">MESAJ KONUSU</label>
                 <select asp-for="Subject" class="form-control">

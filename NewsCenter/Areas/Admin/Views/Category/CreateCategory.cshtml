@@ -5,6 +5,10 @@
 }
 
 @*classlar yazıldığı elementlere görselliik katar örneğin: renk, boyut, ekranda bulunduğu pozisyon vb.*@
+<div class="col-12">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <h4 class="text-danger">@TempData["Message"]</h4>
+</div>
 <form asp-action="CreateCategory" asp-controller="Category" method="post" class="p-3 w-75 m-auto">
     <div class="row mb-3">
         <label class="col-2 ">Kategori İsmi</label>

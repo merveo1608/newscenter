@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+ï»¿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Build.Execution;
 using NewsCenter.Models;
 using Project.BLL.ManagerServices.Abstracts;
@@ -25,16 +25,15 @@ namespace NewsCenter.Controllers
         //projemde websitemin ana sayfas?d?r
         public IActionResult Index(int categoryID)
         {
-            //burada haberlerimin tarihine göre ae?iv haber olup olmad???n?n ayarlamalar?n? yapt?m
+            //burada 2024 yÄ±lÄ±ndan Ã¶nceki haberleri arÅŸiv haberler olarak viewBah e gÃ¶nderdim
             DateTime baseDate = new DateTime(2024, 1, 1);
-            List<News> archiveNews= _newsManager.Where(x => x.PublishDate < baseDate && x.PublishDate !=null && x.Active == true).ToList();
-            ViewBag.archiveNews = archiveNews;
+            ViewBag.archiveNews = _newsManager.Where(x => x.PublishDate < baseDate && x.PublishDate != null && x.Active == true).ToList();
 
-            //newsmanager ile veritaban?ndan haberlerin stastüsü silinmemi? olanlar? ve active olanlar? listele ve ?uanki tarihten bir gün önceki
+            //newsmanager ile veritaban?ndan haberlerin stastÃ¼sÃ¼ silinmemi? olanlar? ve active olanlar? listele ve ?uanki tarihten bir gÃ¼n Ã¶nceki
             List<News> news = _newsManager.Where(x =>x.Status != DataStatus.Deleted && x.Active == true && x.PublishDate > DateTime.Now.AddDays(-1)).ToList();
 
 
-            //kategri ?dsine göre haberleri filtreleyip viewbag ile viewa gönderir
+            //kategri idsine gÃ¶re haberleri filtreleyip viewbag ile viewa gÃ¶nderir
             if(categoryID !=0)
             {
                 news = news.Where(x => x.CategoryID == categoryID).ToList();
@@ -43,10 +42,10 @@ namespace NewsCenter.Controllers
             ViewBag.categoryID = categoryID;
 
             ViewBag.news = news;
-            //haberler ve reklamlar listelenip viewa gönderir
-            List<Advert> adverts = _advertManager.GetAll();
-            ViewBag.adverts = adverts;
-            return View(_newsManager.GetAll());
+            //reklamlar
+            ViewBag.adverts = _advertManager.GetAll().Where(x=> x.Status != DataStatus.Deleted); 
+
+            return View();
         }
     }
 }

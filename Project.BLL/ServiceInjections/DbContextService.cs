@@ -17,17 +17,9 @@ namespace Project.BLL.ServiceInjections
     {
         public static IServiceCollection AddDbContextService(this IServiceCollection services)
         {
-
-            //Neden ServiceProvider
-
-            //Cünkü biz bu noktada aslında bir Core.MVC platformundaki startup dosyasında degiliz...Dolayısıyla oradaki hazır service elimizde yok...Biz o yapıları ayaga kaldırmak adına bir giriş noktasına ihtiyac duyarız...Ve bu giriş noktasını bana ServiceProvider nesnesi saglar...
+            // biz bu noktada aslında bir Core.MVC platformundaki startup dosyasında degiliz...Dolayısıyla oradaki hazır service elimizde yok...Biz o yapıları ayaga kaldırmak adına bir giriş noktasına ihtiyac duyarız...Ve bu giriş noktasını bana ServiceProvider nesnesi saglar...
 
             ServiceProvider provider = services.BuildServiceProvider();
-
-            //Sakın IConfiguration kullanırken Castle kütüphanesini kullanmayın... Kullanacagınız kütüphane Microsoft.Extensions.Configuration olmak zorundadır...
-
-            //Neden IConfiguration
-
             //IConfiguration sayesinde projenizin conf.(ayarlamalarının) bulundugu dosyaya ulasabiliyorsunuz...
 
             IConfiguration? configuration = provider.GetService<IConfiguration>();

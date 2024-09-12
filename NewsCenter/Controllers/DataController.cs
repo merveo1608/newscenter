@@ -27,7 +27,9 @@ namespace NewsCenter.Controllers
             var newsList = _newsManager.GetAll().Select(n => new
             {
                n.Header,
-                n.Description
+                n.Description,
+                n.PublishDate
+
             }).ToList(); 
             return Ok(newsList); 
         }

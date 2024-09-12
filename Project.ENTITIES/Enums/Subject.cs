@@ -8,9 +8,10 @@ namespace Project.ENTITIES.Enums
 {
     public enum Subject
     {
+        //konu türleri
 
-        Request = 1,
-        Suggestion = 2,
-        Complaint = 3
+        Request = 1, //İSTEK
+        Suggestion = 2, //ÖNERİ
+        Complaint = 3//ŞİKAYET
     }
 }
